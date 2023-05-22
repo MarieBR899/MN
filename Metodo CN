@@ -2,27 +2,27 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-'' Método de Newton-Raphson
-# Ejemplo 1 (Burden ejemplo 1 p.51/pdf.61)
 
-import numpy as np
+st.title(":blue[Método Casi-Newton)]")
 
-# INGRESO
-fx  = lambda x: x**3 + 4*(x**2) - 10
-dfx = lambda x: 3*(x**2) + 8*x
+st.header("Teorema")
+"""
+El metodo cuasi Newton o método de Broyden 
+Como se menciono anteriormente el metodo de Newton tiene como principal desventaja  el cálculo y evaluación de las derivadas parciales ,asi como lainversion
+de la matriz jacobiana. Cuando no es práctico, o posible obtener las derivadas  parciales pueden usarse las aproximaciones  por diferencias finitas
+a dichas derivadas, lo que representa  la generalizacion del método  de la secante para la solución de sistemas  de ecuaciones no lineales  y se conoce 
+así como el método  de cuasi Newton o Broyden.
 
-x0 = 2
-tolera = 0.001
+Este método requiere $n$ evaluaciones  funcionales por iteración  ya que remplaza la matriz jacobiana  con una matriz de aproximación 
+que se actualiza en cada iteración y también disminuye el número de  calculos aritméticos a $O(n^2)$. Pertenece a una clase de tecnicas que 
+reemplazan a la matriz jacobiana con una matriz de aproximación  que se actualiza con cada iteración. 
+Su desventaja radica en que se pierde  la convergencia cuadrática de Newton, al ser sustituida por una convergencia denominada  superlineal , la cual implica que:
 
-# PROCEDIMIENTO
-tabla = []
-tramo = abs(2*tolera)
-xi = x0
-while (tramo>=tolera):
-    xnuevo = xi - fx(xi)/dfx(xi)
-    tramo  = abs(xnuevo-xi)
-    tabla.append([xi,xnuevo,tramo])
-    xi = xnuevo
+
+fijo ya que la gran desventaja de este se consiste en obtener ecuaciones $g_i$ que converja 
+en el intervalo de solucion y dicha búsqueda puede representar un esfuerzo de cálculo considerable, en lo unico en que se parecen en estos dos metodos es 
+la generalización multivariable del método de Newtoon para una sola variable.
+
 
 
 
