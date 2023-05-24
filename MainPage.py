@@ -31,15 +31,16 @@ El método de Broyden condiste en que a partir de 2 aproximaciones iniciales:
 
 $X^{(0)}$ y $ X^{(1)}$ y la solucion de $X$ de $F(x)=0
 
-se calcula de $X^{(2)}$ en afelante von el método de Broyden.
-La primera iteracion se calcula por método de Newton, o si es difícil determinar se calcula por $J(x^{(0)})$ se utilizan las ecuaciones de diferencias para aproximar las derivadas parciales.
-
-Antes de iniciar con el metodo de Broyden es importante recordar que el metodo de la secante multivariable implica la siguiente fórmula para sustituir el cálculo de la derivadas
-
-$f'(x_1)= $\dfrac {f(x_1)- f(x_0)}{x_1-x_0}
+se calcula de $X^{(2)}$ en afelante von el método de Broyden. La primera iteracion se calcula por método de Newton, o si es difícil determinar se calcula por $J(x^{(0)})$ se utilizan las ecuaciones de diferencias para aproximar las derivadas parciales.
+Antes de iniciar con el metodo de Broyden es importante recordar que el metodo de la secante multivariable implica la siguiente fórmula para sustituir el cálculo de la derivadas.
 '''
 
-'''
+st.latex(r"""
+f'(x_1)= \frac {f(x_1)- f(x_0)}{x_1-x_0}
+""")
+
+
+"""
 Dado que en los sistemas de ecuaciones no lineales $X^{(1)}$-$X^{(0)}$ es un vector, el cociente correspondiente esta indefinido.
 Sin embargo , el método procedes de manera semejante al método de Newton, por que la matriz  $J(X^{(1)})$ es reemplazada  por una matriz $A$ que tiene  la propiedad 
 de que :
@@ -52,10 +53,16 @@ Esta matriz es la que se usa para  determinar $X^{(2)}$ como:
    
    
    Y cuyos componentes se ontienen con las dos iteraciones previas  $X^{(k)}$ y $X^{(k-1)}$ de la siguiente manera:
-   '''
+
 st.latex(r"""
 
   \begin{equation}
     A^{(k)}= A^{(k-1)} + \frac{[F(X^{(k)})-A^{(k-1)}-A^{(k-1)}(X^{(k)}-X^{(k-1)}](X^{(k)}-X^{(k-1)})^{t}}{||(X^{(k)}-X^{(k-1)})||_2^{2}}
 \end{equation}
 """)
+O bien 
+
+st.latex(r"""
+begin{equation}
+    \lim_{x\to\infty}  (\frac{||X^{(x+1)}-X||}{||X^{(i)}-X||}=0
+\end{equation}
