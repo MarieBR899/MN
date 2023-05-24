@@ -14,13 +14,15 @@ Como se menciono anteriormente el metodo de Newton tiene como principal desventa
 de la matriz jacobiana. Cuando no es práctico, o posible obtener las derivadas  parciales pueden usarse las aproximaciones  por diferencias finitas
 a dichas derivadas, lo que representa  la generalizacion del método  de la secante para la solución de sistemas  de ecuaciones no lineales  y se conoce 
 así como el método  de cuasi Newton o Broyden.
-""
+
+
 Este método requiere $n$ evaluaciones  funcionales por iteración  ya que remplaza la matriz jacobiana  con una matriz de aproximación 
 que se actualiza en cada iteración y también disminuye el número de  calculos aritméticos a $O(n^2)$. Pertenece a una clase de tecnicas que 
 reemplazan a la matriz jacobiana con una matriz de aproximación  que se actualiza con cada iteración. 
 Su desventaja radica en que se pierde  la convergencia cuadrática de Newton, al ser sustituida por una convergencia denominada  superlineal , la cual implica que:
 
 '''
+
 '''
 El método de Broyden condiste en que a partir de 2 aproximaciones iniciales
 $X^(0)$ y $X^(1)$ y la solucion de $x$ de $F(x)=0
