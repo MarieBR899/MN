@@ -22,7 +22,7 @@ reemplazan a la matriz jacobiana con una matriz de aproximación  que se actuali
 Su desventaja radica en que se pierde  la convergencia cuadrática de Newton, al ser sustituida por una convergencia denominada superlineal, 
 la cual implica que:  
 
- \lim_{x\to\infty}  (\frac{||X^{(x+1)}-X||}{||X^{(i)}-X||}=0
+ $\lim_{x\to\infty}$  $(\frac{||X^{(x+1)}-X||}{||X^{(i)}-X||}=0$
 '''
 
 '''
