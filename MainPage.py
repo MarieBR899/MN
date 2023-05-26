@@ -62,7 +62,6 @@ st.latex(r"""
 
 
 st.latex(r"""
-begin{equation}
-    \lim_{x\to\infty}  (\frac{||X^{(x+1)}-X||}{||X^{(i)}-X||}=0
-\end{equation} """)
+    \lim_{x\to\infty} (\frac{||X^{(x+1)}-X||}{||X^{(i)}-X||}=0
+    """)
                         
