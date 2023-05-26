@@ -46,21 +46,25 @@ st.latex(r"""
 f'(x_1)= \frac {f(x_1)- f(x_0)}{x_1-x_0}
 """)
 
-
-"""
+'''
 Dado que en los sistemas de ecuaciones no lineales $X^{(1)}$-$X^{(0)}$ es un vector, el cociente correspondiente esta indefinido.
 Sin embargo , el método procedes de manera semejante al método de Newton, por que la matriz  $J(X^{(1)})$ es reemplazada  por una matriz $A$ que tiene  la propiedad 
 de que :
-
-$A^{(1)}(X^{(1)}-X^{(0)}$= $F(X^{(1)}-F(X^{(0)})$
+'''
+st.latex(r"""
+A^{(1)}(X^{(1)}-X^{(0)}$= $F(X^{(1)}-F(X^{(0)})
+""")
+'''
 
 Esta matriz es la que se usa para  determinar $X^{(2)}$ como:
-
-   $X^{(2)} = X^{(1)}-(A^{(1)})^{-1} F(X^{(1)})$
+'''
+st.latex(r"""
+   X^{(2)} = X^{(1)}-(A^{(1)})^{-1} F(X^{(1)})
+   """)
    
-   
+   '''
    Y cuyos componentes se ontienen con las dos iteraciones previas  $X^{(k)}$ y $X^{(k-1)}$ de la siguiente manera:
-"""
+'''
 
 
 st.latex(r"""
