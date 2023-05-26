@@ -31,10 +31,13 @@ st.latex(r"""
 
 '''
 El método de Broyden condiste en que a partir de 2 aproximaciones iniciales:
+'''
 
-
+st.latex(r"""
 $X^{(0)}$ y $ X^{(1)}$ y la solucion de $X$ de $F(x)=0
+""")
 
+'''
 se calcula de $X^{(2)}$ en afelante von el método de Broyden. La primera iteracion se calcula por método de Newton, o si es difícil determinar se calcula por $J(x^{(0)})$ se utilizan las ecuaciones de diferencias para aproximar las derivadas parciales.
 Antes de iniciar con el metodo de Broyden es importante recordar que el metodo de la secante multivariable implica la siguiente fórmula para sustituir el cálculo de la derivadas.
 '''
