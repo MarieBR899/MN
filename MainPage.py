@@ -24,18 +24,17 @@ la cual implica que:
 '''
 
 st.latex(r"""
- \lim_{x\to\infty}$  $(d\frac{||X^{(x+1)}-X||}$ ${||X^{(i)}-X||}=0
+ \lim_{x\to\infty} (d\frac{||X^{(x+1)}-X||} {||X^{(i)}-X||}=0
 
 """)
 
 
 """
 El método de Broyden condiste en que a partir de 2 aproximaciones iniciales:
-"""
 
-st.latex(r"""
+
 $X^{(0)}$ y $ X^{(1)}$ y la solucion de $X$ de $F(x)=0
-""")
+"""
 
 """
 se calcula de $X^{(2)}$ en afelante von el método de Broyden. La primera iteracion se calcula por método de Newton, o si es difícil determinar se calcula por $J(x^{(0)})$ se utilizan las ecuaciones de diferencias para aproximar las derivadas parciales.
@@ -78,6 +77,6 @@ O bien
 """
 
 st.latex(r"""
-    A^{(k)}= A^{(k-1)} + [\frac{[\Delta F^{(k)}-A^{(k-1)}-\Delta X^{(k)}](\Delta X^{(k)})^{t})}{||\Delta X^{(k)}||_2^{2}}
+    A^{(k)}= A^{(k-1)} + [\frac{[\Delta F^{(k)}-A^{(k-1)}-\Delta X^{(k)}](\Delta X^{(k)})^{t}}{||\Delta X^{(k)}||_2^{2}}
     """)
                         
