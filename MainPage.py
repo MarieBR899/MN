@@ -60,8 +60,11 @@ st.latex(r"""
     A^{(k)}= A^{(k-1)} + \frac{[F(X^{(k)})-A^{(k-1)}-A^{(k-1)}(X^{(k)}-X^{(k-1)}](X^{(k)}-X^{(k-1)})^{t}}{||(X^{(k)}-X^{(k-1)})||_2^{2}}
 """) 
 
+"""
+O bien 
+"""
 
 st.latex(r"""
-    \lim_{x\to\infty} (\frac{||X^{(x+1)}-X||}{||X^{(i)}-X||}=0
+    A^{(k)}= A^{(k-1)} + [\frac{[\DeltaF^{(k)}-A^{(k-1)}-\DeltaX^{(k)}](\DeltaX^{(k)})^{t})}{||\DeltaX^{(k)}||_2^{2}}
     """)
                         
