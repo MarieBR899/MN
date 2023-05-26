@@ -54,12 +54,10 @@ Esta matriz es la que se usa para  determinar $X^{(2)}$ como:
    
    Y cuyos componentes se ontienen con las dos iteraciones previas  $X^{(k)}$ y $X^{(k-1)}$ de la siguiente manera:
 """
-"""
 
-st.latex(r"""
 
+st.latex(r""
     A^{(k)}= A^{(k-1)} + \frac{[F(X^{(k)})-A^{(k-1)}-A^{(k-1)}(X^{(k)}-X^{(k-1)}](X^{(k)}-X^{(k-1)})^{t}}{||(X^{(k)}-X^{(k-1)})||_2^{2}}
-
 """)
 
 O bien 
