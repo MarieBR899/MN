@@ -21,9 +21,13 @@ que se actualiza en cada iteración y también disminuye el número de  calculos
 reemplazan a la matriz jacobiana con una matriz de aproximación  que se actualiza con cada iteración. 
 Su desventaja radica en que se pierde  la convergencia cuadrática de Newton, al ser sustituida por una convergencia denominada superlineal, 
 la cual implica que:  
-
- $\lim_{x\to\infty}$  $(d\frac{||X^{(x+1)}-X||}$ ${||X^{(i)}-X||}=0$
 '''
+
+st.latex(r"""
+ \lim_{x\to\infty}$  $(d\frac{||X^{(x+1)}-X||}$ ${||X^{(i)}-X||}=0
+
+""")
+
 
 '''
 El método de Broyden condiste en que a partir de 2 aproximaciones iniciales:
@@ -65,6 +69,6 @@ O bien
 """
 
 st.latex(r"""
-    A^{(k)}= A^{(k-1)} + [\frac{[\DeltaF^{(k)}-A^{(k-1)}-\DeltaX^{(k)}](\DeltaX^{(k)})^{t})}{||\DeltaX^{(k)}||_2^{2}}
+    A^{(k)}= A^{(k-1)} + [\frac{[\Delta F^{(k)}-A^{(k-1)}-\Delta X^{(k)}](\DeltaX^{(k)})^{t})}{||\Delta X^{(k)}||_2^{2}}
     """)
                         
