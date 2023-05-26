@@ -57,9 +57,9 @@ Esta matriz es la que se usa para  determinar $X^{(2)}$ como:
 """
 
 st.latex(r"""
-  \begin{equation}
+
     A^{(k)}= A^{(k-1)} + \frac{[F(X^{(k)})-A^{(k-1)}-A^{(k-1)}(X^{(k)}-X^{(k-1)}](X^{(k)}-X^{(k-1)})^{t}}{||(X^{(k)}-X^{(k-1)})||_2^{2}}
-\end{equation}
+
 """)
 
 O bien 
