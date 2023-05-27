@@ -108,17 +108,19 @@ st.latex(r"""  A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta
 st.latex(r"""
     (A+XY^{(t)})^{-1}= A^{(-1)}- \frac{A^{(-1)}XY^{(t)}A^{(-1)}}{1+Y^{(t)}A^{-1}X
     """)
- """
+
+"""
  Es decir, esta formula también permite calcular $(A^{(k)})^{-1}$ a partir de $(A^{(k-1)})^{-1}$, eliminando la necesidad  de invertir  una matriz en cada iteración(Burdeny Faires, 2011).
  Para ello primero se obtiene la inversa de la ecuación:
- """
+"""
   
 st.latex(r"""
     (A^{(k-1)})^{-1} = (A^{(k-1)}+ [\frac{[\Delta F^{(k)}-A^{(k-1)}-\Delta X^{(k)}](\Delta X^{(k)})^{t}}{||\Delta X^{(k)}||_2^{2}}
     """)
- """
+
+"""
  Haciendo
- """
+"""
 st.latex(r"""
     A= (A^{(k-1)}), X = [\frac{[\Delta F^{(k)}-A^{(k-1)}-\Delta X^{(k)}]}{||\Delta X^{(k)}||_2^{2}} , Y = \Delta X^{k}
     """)
