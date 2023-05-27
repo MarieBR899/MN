@@ -85,7 +85,8 @@ st.latex(r"""
  
 '''
  
- st.latex(r""" \Delta F^{(k)}= F(X^{(k)})-F(X^{(k-1)})  y \Delta X^{(k)}=X^{(k)})-X^{(k-1)}
+ st.latex(r"""
+ \Delta F^{(k)}= F(X^{(k)})-F(X^{(k-1)})  y \Delta X^{(k)}=X^{(k)})-X^{(k-1)}
     """)
     
   '''
