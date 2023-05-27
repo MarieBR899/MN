@@ -106,11 +106,14 @@ st.latex(r"""  A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta
  siempre que
 """
 st.latex(r""" 
- Y^{t}A^{-1}X \neq -1. Además en este caso
+ Y^{t}A^{-1}X \neq -1. 
 """)
- 
+"""
+Además en este caso
+"""
+
 st.latex(r"""
-      (A+XY^{(t)})^{-1}= A^{(-1)}- \frac{A^{(-1)}XY^{(t)}A^{(-1)}}{1+Y^{(t)}A^{-1}X
+      (A+XY^{(t)})^{-1} = A^{(-1)} - \frac{A^{(-1)}XY^{(t)}A^{(-1)}}{1+Y^{(t)}A^{-1}X
     """)
 
 """
