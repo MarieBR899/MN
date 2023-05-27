@@ -103,10 +103,14 @@ st.latex(r"""  A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta
  inversión de Sherman Morrison.
  
  Teorema de Sherman Morrison: si A es una matriz de nxn no singular y Xy Y son vectores, entonces $A+XY^{t}$ no es singular, 
- siempre que $Y^{t}A^{-1}X \neq -1$. Además en este caso
+ siempre que
 """
+ st.latex(r""" 
+ Y^{t}A^{-1}X \neq -1. Además en este caso
+""")
+ 
 st.latex(r"""
-    (A+XY^{(t)})^{-1}= A^{(-1)}- \frac{A^{(-1)}XY^{(t)}A^{(-1)}}{1+Y^{(t)}A^{-1}X
+      (A+XY^{(t)})^{-1}= A^{(-1)}- \frac{A^{(-1)}XY^{(t)}A^{(-1)}}{1+Y^{(t)}A^{-1}X
     """)
 
 """
