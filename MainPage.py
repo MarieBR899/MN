@@ -105,7 +105,7 @@ st.latex(r"""  A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta
  Teorema de Sherman Morrison: si A es una matriz de nxn no singular y Xy Y son vectores, entonces $A+XY^{t}$ no es singular, 
  siempre que
 """
- st.latex(r""" 
+st.latex(r""" 
  Y^{t}A^{-1}X \neq -1. Además en este caso
 """)
  
