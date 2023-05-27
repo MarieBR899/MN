@@ -80,20 +80,20 @@ st.latex(r"""
     A^{(k)}= A^{(k-1)} + [\frac{[\Delta F^{(k)}-A^{(k-1)}-\Delta X^{(k)}](\Delta X^{(k)})^{t}}{||\Delta X^{(k)}||_2^{2}}
     """)
        
- """
+'''
  Donde
  
- """
+'''
  
  st.latex(r"""
     \Delta F^{(k)}= F(X^{(k)})-F(X^{(k-1)})  y \Delta X^{(k)}=X^{(k)})-X^{(k-1)}
     """)
     
-  """
+  '''
   Para la primera  aplicación se requieren dos vectores iniciales $X^{(0)}$ y $X^{(1)};
   este último, como se menciono anes, puede obtenerse  con el método de Newon Raphson cuya matriz jacobiana puede emplearse para la primera 
   iteración , lo cual queda:
-  """
+ '''
   
   st.latex(r"""
     A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta X^{(1)}](\Delta X^{(1)})^{t}}{||\Delta X^{(1)}||_2^{2}}
