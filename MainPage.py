@@ -89,7 +89,7 @@ st.latex(r"""
  \Delta F^{(k)}= F(X^{(k)})-F(X^{(k-1)})  y \Delta X^{(k)}=X^{(k)})-X^{(k-1)}
     """)
     
- """
+"""
   Para la primera  aplicación se requieren dos vectores iniciales $X^{(0)}$ y $X^{(1)};
   este último, como se menciono anes, puede obtenerse  con el método de Newon Raphson cuya matriz jacobiana puede emplearse para la primera 
   iteración , lo cual queda:
