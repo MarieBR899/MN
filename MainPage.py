@@ -85,8 +85,7 @@ st.latex(r"""
  
 '''
  
- st.latex(r"""
-      \Delta F^{(k)}= F(X^{(k)})-F(X^{(k-1)})  y \Delta X^{(k)}=X^{(k)})-X^{(k-1)}
+ st.latex(r""" \Delta F^{(k)}= F(X^{(k)})-F(X^{(k-1)})  y \Delta X^{(k)}=X^{(k)})-X^{(k-1)}
     """)
     
   '''
@@ -95,8 +94,7 @@ st.latex(r"""
   iteración , lo cual queda:
  '''
   
-  st.latex(r"""
-    A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta X^{(1)}](\Delta X^{(1)})^{t}}{||\Delta X^{(1)}||_2^{2}}
+  st.latex(r"""  A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta X^{(1)}](\Delta X^{(1)})^{t}}{||\Delta X^{(1)}||_2^{2}}
     """)
 
  """
