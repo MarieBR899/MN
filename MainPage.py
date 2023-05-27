@@ -89,13 +89,13 @@ st.latex(r"""
  \Delta F^{(k)}= F(X^{(k)})-F(X^{(k-1)})  y \Delta X^{(k)}=X^{(k)})-X^{(k-1)}
     """)
     
-  '''
+  """
   Para la primera  aplicación se requieren dos vectores iniciales $X^{(0)}$ y $X^{(1)};
   este último, como se menciono anes, puede obtenerse  con el método de Newon Raphson cuya matriz jacobiana puede emplearse para la primera 
   iteración , lo cual queda:
- '''
+ """
   
-  st.latex(r"""  A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta X^{(1)}](\Delta X^{(1)})^{t}}{||\Delta X^{(1)}||_2^{2}}
+st.latex(r"""  A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta X^{(1)}](\Delta X^{(1)})^{t}}{||\Delta X^{(1)}||_2^{2}}
     """)
 
  """
@@ -105,7 +105,7 @@ st.latex(r"""
  Teorema de Sherman Morrison: si A es una matriz de nxn no singular y Xy Y son vectores, entonces $A+XY^{t}$ no es singular, 
  siempre que $Y^{t}A^{-1}X \neq -1$. Además en este caso
  """
-   st.latex(r"""
+st.latex(r"""
     (A+XY^{(t)})^{-1}= A^{(-1)}- \frac{A^{(-1)}XY^{(t)}A^{(-1)}}{1+Y^{(t)}A^{-1}X
     """)
  """
@@ -113,13 +113,13 @@ st.latex(r"""
  Para ello primero se obtiene la inversa de la ecuación:
  """
   
- st.latex(r"""
+st.latex(r"""
     (A^{(k-1)})^{-1} = (A^{(k-1)}+ [\frac{[\Delta F^{(k)}-A^{(k-1)}-\Delta X^{(k)}](\Delta X^{(k)})^{t}}{||\Delta X^{(k)}||_2^{2}}
     """)
  """
  Haciendo
  """
-  st.latex(r"""
+st.latex(r"""
     A= (A^{(k-1)}), X = [\frac{[\Delta F^{(k)}-A^{(k-1)}-\Delta X^{(k)}]}{||\Delta X^{(k)}||_2^{2}} , Y = \Delta X^{k}
     """)
  
