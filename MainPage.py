@@ -206,7 +206,17 @@ st.latex(r"""
         \end{bmatrix} 
          """) 
  
-
- 
- 
- 
+    """
+    Con estos dos valores iniciales  se aplica la forma iterativa de Broyden 
+    """
+st.latex(r"""
+  \begin{equation}
+\begin{bmatrix}
+6 & 8 & 1\\
+2 & 9 & 3\\
+4 & 5 & 1
+\end{bmatrix}
+\end{equation}
+""")
+  
+    
