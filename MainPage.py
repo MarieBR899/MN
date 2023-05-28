@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
-
+tab1, tab2, tab3 = st.tabs(["Definiciones","Ejemplos","Aplicaciones"])
+with tab1:
+ st.title(":blue[Metodo de Broyden]")
 st.title('ProyectoMN')
 
 '''
@@ -199,8 +200,7 @@ end{bmatrix}
 0.1428 \\ 
 1.8571
 \end{bmatrix} 
-
-     """) 
+""") 
  
 
  
