@@ -135,7 +135,7 @@ Se puede reescribir como: $ (A^{(k)})^{-1} = (A+XY^{(t)})^{-1} $  lo que se ajus
 """
 
 st.latex(r"""
-    (A^{(k})^{-1} = (A^{(k-1})^{-1} = \frac{[\Delta X^{(k)}-(A^{(k-1)})^{-1} \Delta F^{(k)}]}{||\Delta X^{(k)}||_2^{2}} , Y = \Delta X^{k}
+    (A^{(k})^{-1} = (A^{(k-1})^{-1} + \frac{[\Delta X^{(k)}-(A^{(k-1)})^{-1} \Delta F^{(k)}] (\Delta X^{(k)})^{t}(A^{(k-1)})^{-1}}{||\Delta X^{(k)}||_2^{2}} , Y = \Delta X^{k}
 
     """)
 
