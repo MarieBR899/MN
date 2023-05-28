@@ -178,9 +178,9 @@ st.latex(r"""
        f_3(x,y,z) = x^{2}+ y^{2}+ z^{2}+z -6 =0
        """) 
  
-      """
+       """
        Tomando como vector inicial $ X^{(0)} $ = $ \begin{bmatrix} -1 \\ 0 \\ 2\ end {bmatrix} $, se calcula $ X^{(1)}$ por el método de Newton
-      """
+       """
        st.latex(r"""
        $X^{(1)} =
        \begin{bmatrix}
