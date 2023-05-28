@@ -134,8 +134,8 @@ st.latex(r"""
 Se puede reescribir como:  
 """
 st.latex(r"""
-   (A^{(k)})^{-1} = (A+XY^{Y^{(t)}
- """)
+    (A^{(k)})^{-1} = (A+XY^{(t)})^{-1}
+    """)
 
 """
 lo que se ajusta  el teorema, sustituyendo en la ecuación y desarrollando
@@ -178,38 +178,38 @@ st.latex(r"""
        f_3(x,y,z) = x^{2}+ y^{2}+ z^{2}+z -6 =0
        """) 
  
-"""
-Tomando como vector inicial $ X^{(0)} $ = $ \begin{bmatrix} -1 \\ 0 \\ 2\ end {bmatrix} $, se calcula $ X^{(1)}$ por el método de Newton
-"""
-st.latex(r"""
-   $X^{(1)} =
-   \begin{bmatrix}
-  -3\\ 
-  \\
-  -2 \\ 
-  2\end{bmatrix} -
-  \begin{bmatrix}
-   -2 & 0 & 4\\
-   \\
-   0 & -1& 4\\
-   \\
-   2 & 0 & 5
-\end{bmatrix}^{-1} 
-    \begin{bmatrix}
-    1\\ 
-    \\
-    1 \\ 
-    \\
-    1\
-   end{bmatrix} = 
-    \begin{bmatrix}
-    -0.82571\\
-    \\
-    0.1428 \\ 
-    \\
-     1.8571
-     \end{bmatrix} 
-     """) 
+      """
+       Tomando como vector inicial $ X^{(0)} $ = $ \begin{bmatrix} -1 \\ 0 \\ 2\ end {bmatrix} $, se calcula $ X^{(1)}$ por el método de Newton
+      """
+       st.latex(r"""
+       $X^{(1)} =
+       \begin{bmatrix}
+        -3\\ 
+       \\
+     -2 \\ 
+     2\end{bmatrix} -
+     \begin{bmatrix}
+      -2 & 0 & 4\\
+       \\
+      0 & -1& 4\\
+      \\
+      2 & 0 & 5
+    \end{bmatrix}^{-1} 
+       \begin{bmatrix}
+       1\\ 
+       \\
+       1 \\ 
+       \\
+       1\
+      end{bmatrix} = 
+       \begin{bmatrix}
+         -0.82571\\
+         \\
+       0.1428 \\ 
+        \\
+        1.8571
+        \end{bmatrix} 
+         """) 
  
 
  
