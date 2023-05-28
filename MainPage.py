@@ -184,23 +184,18 @@ st.latex(r"""
          -2 \\ 
           2\
      end{bmatrix}
-     \end{equation}-
-     \begin{equation}
+     -
      \begin{bmatrix}
       -2 & 0 & 4\\
       0 & -1& 4\\
       2 & 0 & 5
-      \end{bmatrix}
-    \end{equation}^{-1} 
-    \begin{equation}
-       \begin{bmatrix}
+      \end{bmatrix}^{-1} 
+      \begin{bmatrix}
        1\\ 
        1 \\ 
        1\
-      end{bmatrix}
-      end{equation}^{-1}= 
-      \begin{equation}
-       \begin{bmatrix}
+      end{bmatrix}^{-1}= 
+      \begin{bmatrix}
          -0.82571\\
          0.1428 \\ 
          1.8571
@@ -237,8 +232,9 @@ X^{(2)}
 1.84783 
 \end{bmatrix}
 
-\end{equation}\\
-
+\end{equation}
+\\
+\\
 \begin{equation}
 X^{(3)}
 \begin{bmatrix}
@@ -263,8 +259,34 @@ X^{(3)}
 0.15287\\
 1.84713
 \end{bmatrix}
+\end{equation}\\
+\\
+\begin{equation}
+X^{(4)}
+\begin{bmatrix}
+-0.84713\\
+0.15287\\
+1.84713 
+\end{bmatrix}
+-
+\begin{bmatrix}
+-0.72118 & -0.05013 & 0.60724\\
+0.27882 & -1.05013 & 0.60724\\
+-0.27882 & 0.05013 & 0.39276
+\end{bmatrix}
+\begin{bmatrix}
+0.00002\\
+0.00002\\
+0.00002
+\end{bmatrix}
+=
+\begin{bmatrix}
+-0.84713\\
+0.15287\\
+1.84713
+\end{bmatrix}
+\end{equation}\\
 
-\end{equation}
 
 """)
   
