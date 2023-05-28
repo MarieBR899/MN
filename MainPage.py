@@ -136,7 +136,7 @@ st.latex(r"""
 Se puede reescribir como $(A^{(k)})^{-1}$ = $(A + XY^{Y^{(t)}$,  lo que se ajusta  el teorema, sustituyendo en la ecuación y desarrollando
 """
 
- st.latex(r"""
+st.latex(r"""
     (A^{(k)})^{-1} = (A^{(k-1)})^{-1}+ [\frac{[\Delta X^{(k)}-A^{(k-1)}^{-1}-\Delta F^{(k)}](\Delta X^{(k)})^{t}}(A^{(k-1)})^{-1}{||(\Delta X^{(k)})^{t} (A^{(k-1)}){-1} \Delta F^{(k)}}
     (1.1) """) (1.1)
  """
@@ -145,7 +145,7 @@ Se puede reescribir como $(A^{(k)})^{-1}$ = $(A + XY^{Y^{(t)}$,  lo que se ajust
  en lugar de $X^{(1)}$ y $X^{(0)}$. En general, una vez determinado $X^{(i)}$ se calcula $X^{(i+1)}$ por medio de: 
  """
  
- st.latex(r"""
+st.latex(r"""
     X^{(k+1)} = X^{(k)}-(A^{(k)})^{-1}F(X^{(k)})
  """) 
  
@@ -162,7 +162,7 @@ Se puede reescribir como $(A^{(k)})^{-1}$ = $(A + XY^{Y^{(t)}$,  lo que se ajust
     f_3(x,y,z) = x^{2}+ y^{2}+ z^{2}+z -6 =0
     """) 
  
- st.latex(r"""
+st.latex(r"""
     Tomando como vector inicial  \begin{equation}
  \begin{bmatrix}
   -1 \\
