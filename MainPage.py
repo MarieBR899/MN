@@ -164,7 +164,7 @@ st.latex(r"""
 with tab2: 
       st.title(":blue[Ejercicio:]")
  
-     """
+      """
       Ejemplo: 
       Resolver  el siguiente sistema de ecuaciones no lineales empleando el método de Broyden (inversa por el teorema de Sherman Morrison).
       """                                                      
