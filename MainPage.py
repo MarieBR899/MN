@@ -298,9 +298,11 @@ Entonces,una raiz  es:
 """
 st.latex(r"""
 \\
-\begin{bmatrix}
+X= \begin{bmatrix}
 -0.84713\\
 0.15287\\
 1.84713
 \end{bmatrix}
 """)
+
+
