@@ -164,7 +164,7 @@ st.latex(r"""
  necesarias para evaluar $F(X^{(i)}$, pero todavía se requieren $O(n{3})$ cálculos para resolver el sistema lineal asociado de $nxn$
  """
  
- with tab2: 
+with tab2: 
                   st.title(":blue[Ejercicio:]")
  """
  Ejemplo: 
