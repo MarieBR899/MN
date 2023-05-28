@@ -5,7 +5,7 @@ import numpy as np
 tab1, tab2, tab3 = st.tabs(["Definiciones","Ejemplos","Aplicaciones"])
 with tab1:
   st.title('ProyectoMN')
-    st.title(":blue[**Método de Diferencias Divididas**]")
+  st.title(":blue[**Método de Diferencias Divididas**]")
 
 """
 Fórmula de diferencias divididas
