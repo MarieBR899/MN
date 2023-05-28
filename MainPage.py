@@ -206,9 +206,9 @@ st.latex(r"""
         \end{bmatrix} 
          """) 
  
-    """
+   """
     Con estos dos valores iniciales  se aplica la forma iterativa de Broyden 
-    """
+   """
 st.latex(r"""
   \begin{equation}
 \begin{bmatrix}
