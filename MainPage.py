@@ -195,6 +195,7 @@ X^{(1)}=
 1\\
 1
 \end{bmatrix}
+=
  \begin{bmatrix}
 -0.88571\\
 0.1428\\
@@ -233,6 +234,7 @@ X^{(2)}
 \end{bmatrix}
 
 \end{equation}
+
 \\
 \\
 \\
@@ -260,9 +262,9 @@ X^{(3)}
 0.15287\\
 1.84713
 \end{bmatrix}
-\end{equation}\\
+\end{equation}\\ \\
 \\
-\\
+
 \begin{equation}
 X^{(4)}
 \begin{bmatrix}
