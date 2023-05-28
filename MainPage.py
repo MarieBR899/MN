@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 tab1, tab2, tab3 = st.tabs(["Definiciones","Ejemplos","Aplicaciones"])
 with tab1:
+ 
  st.title(":blue[Metodo de Broyden]")
 st.title('ProyectoMN')
 
@@ -144,24 +145,28 @@ lo que se ajusta  el teorema, sustituyendo en la ecuación y desarrollando
 """
 
 st.latex(r"""
-    (A^{(k)})^{-1} = (A^{(k-1)})^{-1}+ [\frac{[\Delta X^{(k)}-A^{(k-1)}^{-1}-\Delta F^{(k)}](\Delta X^{(k)})^{t}}(A^{(k-1)})^{-1}}{\Delta X^{(k)})^{t} (A^{(k-1)}){-1} \Delta F^{(k)}}
+    (A^{(k)})^{-1} = (A^{(k-1)})^{-1} +[\frac{[\Delta X^{(k)}-A^{(k-1)}^{-1}-\Delta F^{(k)}](\Delta X^{(k)})^{t}(A^{(k-1)})^{-1}}{\Delta X^{(k)})^{t} (A^{(k-1)}){-1} \Delta F^{(k)}}
   """) 
 
 """
  Esta formula  permite calcular la invesa de una matriz  con sumas y multiplicaciones de matrices, con lo que se reduce el esfuerzo computacuonal al orden $n^{2}$.
- Una vez determinada $X{(2)}$, el método se repite  para determinar $X{(2)}$, usando $(A^{(2)})^{-1}$ que se obtiene a partir de (1.1) con $A^{(1)}$ y con $X^{(2)}$, y $X^{(1)}$
- en lugar de $X^{(1)}$ y $X^{(0)}$. En general, una vez determinado $X^{(i)}$ se calcula $X^{(i+1)}$ por medio de: 
+ Una vez determinada  $ X {(2)} $, el método se repite  para determinar $ X{(2)} $, usando $ (A^{(2)})^{-1} $ que se obtiene a partir de (1.1) con $A^{(1)}$ y con $X^{(2)}$, y $X^{(1)}$
+ en lugar de $ X^{(1)} $ y $ X^{(0)} $. En general, una vez determinado $ X^{(i)} $ se calcula $ X^{(i+1)} $ por medio de: 
  """
 
 st.latex(r"""
-    X^{(k+1)}= X^{(k)}-(A^{(k)})^{-1}F(X^{(k)}) 
-    """)
+    X^{(k+1)}= X^{(k)}-(A^{(k)})^{-1} F(X^{(k)}) 
+  """)
 
 
 """
  Si el método  se aplica  como se describe  en las ecuaciones anteriores el numero d evaluaciones funcionales disminuye  de $n^{2}+n a n$ las
  necesarias para evaluar $F(X^{(i)}$, pero todavía se requieren $O(n{3})$ cálculos para resolver el sistema lineal asociado de $nxn$
+ """
  
+ with tab2: 
+                  st.title(":blue[Ejercicio:]")
+ """
  Ejemplo: 
  Resolver  el siguiente sistema de ecuaciones no lineales empleando el método de Broyden (inversa por el teorema de Sherman Morrison).
 """                                                      
@@ -175,15 +180,15 @@ st.latex(r"""
     """) 
  
 """
-Tomando como vector inicial $X^{(0)}$ = $\begin{smallmatrix} -1 \\ 0 \\ 2\ end{smallmatrix}$, se xalcula $X^{(1)}$ por el método de Newton
+Tomando como vector inicial $ X^{(0)} $ = $ \begin{bmatrix} -1 \\ 0 \\ 2\ end {bmatrix} $, se calcula $ X^{(1)}$ por el método de Newton
 """
 
 st.latex(r"""
 $X^{(1)} =
-\begin{smallmatrix}
+\begin{bmatrix}
 -3\\ 
 -2 \\ 
-2\end{smallmatrix} -
+2\end{bmatrix} -
 \begin{bmatrix}
 -2 & 0 & 4\\
 0 & -1& 4\\
