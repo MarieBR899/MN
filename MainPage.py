@@ -151,10 +151,11 @@ st.latex(r"""
  Una vez determinada $X{(2)}$, el método se repite  para determinar $X{(2)}$, usando $(A^{(2)})^{-1}$ que se obtiene a partir de (1.1) con $A^{(1)}$ y con $X^{(2)}$, y $X^{(1)}$
  en lugar de $X^{(1)}$ y $X^{(0)}$. En general, una vez determinado $X^{(i)}$ se calcula $X^{(i+1)}$ por medio de: 
  """
- 
+
 st.latex(r"""
-    X^{(k+1)} = X^{(k)}-(A^{(k)})^{-1}F(X^{(k)})
- """) 
+    X^{(k+1)}= X^{(k)}-(A^{(k)})^{-1}F(X^{(k)}) 
+    """)
+
 
 """
  Si el método  se aplica  como se describe  en las ecuaciones anteriores el numero d evaluaciones funcionales disminuye  de $n^{2}+n a n$ las
@@ -162,23 +163,31 @@ st.latex(r"""
  
  Ejemplo: 
  Resolver  el siguiente sistema de ecuaciones no lineales empleando el método de Broyden (inversa por el teorema de Sherman Morrison).
-"""
+"""                                                      
+""" Raíces (-0.8471,0.1529,1.8471),
+     (1.1805,2.1805,-0.1805) """
+
 st.latex(r"""
-    f_1(x,y,z) = x^{2}-x + y^{2} + z^{2}-5=0  \\               Raíces (-0.8471,0.1529,1.8471),
-    f_2(x,y,z) = x^{2}+ y^{2} -y + z^{2}-4=0  \\                      (1.1805,2.1805,-0.1805) 
+    f_1(x,y,z) = x^{2}-x + y^{2} + z^{2}-5=0  \\               
+    f_2(x,y,z) = x^{2}+ y^{2} -y + z^{2}-4=0  \\                     
     f_3(x,y,z) = x^{2}+ y^{2}+ z^{2}+z -6 =0
     """) 
  
+"""
+  Tomando como vector inicial $X^{(0)}$ = $\begin{smallmatrix}-1 \\ 0 \\ 2\end{smallmatrix}$, se xalcula $X^{(1)}$ por el método de Newton
+"""
+
 st.latex(r"""
-    Tomando como vector inicial  \begin{equation}
- \begin{bmatrix}
-  -1 \\
-   0 \\
-   2
-\end{bmatrix}
-\end{equation} """) 
- 
- 
+$X^{(1)} =\begin{smallmatrix}-3\\ -2 \\ 2\end{smallmatrix} - \begin{equation}
+\begin{vmatrix}
+-2 &0 & 4\\
+0 & -1& 4\\
+2 & 0 & 5
+\end{vmatrix}
+\end{equation}^{-1}  \begin{smallmatrix}1\\ 1 \\ 1\end{smallmatrix} = \begin{smallmatrix}-0.82571\\ 0.1428 \\ 1
+8571\end{smallmatrix} 
+
+     """) 
  
 
  
