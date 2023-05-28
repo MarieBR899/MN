@@ -156,7 +156,7 @@ st.latex(r"""
  Ejemplo: 
  Resolver  el siguiente sistema de ecuaciones no lineales empleando el método de Broyden (inversa por el teorema de Sherman Morrison).
 """
- st.latex(r"""
+st.latex(r"""
     f_1(x,y,z) = x^{2}-x + y^{2} + z^{2}-5=0                 Raíces (-0.8471,0.1529,1.8471),
     f_2(x,y,z) = x^{2}+ y^{2} -y + z^{2}-4=0                        (1.1805,2.1805,-0.1805) 
     f_3(x,y,z) = x^{2}+ y^{2}+ z^{2}+z -6 =0
