@@ -181,9 +181,8 @@ st.latex(r"""
        \begin{equation}
        \begin{bmatrix}
         -3\\ 
-       \\
-     -2 \\ 
-     2\
+         -2 \\ 
+          2\
      end{bmatrix}
      \end{equation}-
      \begin{equation}
@@ -196,19 +195,15 @@ st.latex(r"""
     \begin{equation}
        \begin{bmatrix}
        1\\ 
-       \\
        1 \\ 
-       \\
        1\
       end{bmatrix}
       end{equation}^{-1}= 
       \begin{equation}
        \begin{bmatrix}
          -0.82571\\
-         \\
-       0.1428 \\ 
-        \\
-        1.8571
+         0.1428 \\ 
+         1.8571
         \end{bmatrix}
         \end{equation}
          """) 
@@ -218,18 +213,30 @@ st.latex(r"""
 """
 st.latex(r"""
 \begin{equation}
+X^{(2)}
 \begin{bmatrix}
 -0.8571\\
 0.1428\\
 1.8571 
 \end{bmatrix}
-\end{equation} -
-  \begin{equation}
+-
 \begin{bmatrix}
 -0.7139 & -0.02174 & 0.058696\\
 0.28261 & -1.02174 & 0.58696\\
 -0.28261 & 0.02174 & 0.41304
 \end{bmatrix}
+\begin{bmatrix}
+0.06122\\
+0.06122\\
+0.06122 
+\end{bmatrix}
+=
+\begin{bmatrix}
+-0.84783\\
+0.15217\\
+1.84783 
+\end{bmatrix}
+
 \end{equation}
 """)
   
