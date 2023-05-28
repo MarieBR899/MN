@@ -177,31 +177,31 @@ st.latex(r"""
 Tomando como vector inicial $ X^{(0)} $ = $ \begin{bmatrix} -1 \\ 0 \\ 2\ end {bmatrix} $, se calcula $ X^{(1)}$ por el método de Newton
 """
 st.latex(r"""
-       $X^{(1)} =
-       \begin{equation}
-       \begin{bmatrix}
-        -3\\ 
-         -2 \\ 
-          2\
-     end{bmatrix}
-     -
-     \begin{bmatrix}
-      -2 & 0 & 4\\
-      0 & -1& 4\\
-      2 & 0 & 5
-      \end{bmatrix}^{-1} 
-      \begin{bmatrix}
-       1\\ 
-       1 \\ 
-       1\
-      end{bmatrix}^{-1}= 
-      \begin{bmatrix}
-         -0.82571\\
-         0.1428 \\ 
-         1.8571
-        \end{bmatrix}
-        \end{equation}
-         """) 
+\begin{equation}
+X^{(1)}=
+\begin{bmatrix}
+-1\\
+0\\
+2 
+\end{bmatrix}
+-
+\begin{bmatrix}
+-3 & -0 & 4\\
+-2 & -1 & 4\\
+-2 & 0 & 5
+\end{bmatrix}^{-1}
+\begin{bmatrix}
+1\\
+1\\
+1
+\end{bmatrix}
+ \begin{bmatrix}
+-0.88571\\
+0.1428\\
+1.8571
+\end{bmatrix}
+\end{equation}
+""") 
  
 """
   Con estos dos valores iniciales  se aplica la forma iterativa de Broyden 
@@ -235,6 +235,7 @@ X^{(2)}
 \end{equation}
 \\
 \\
+\\
 \begin{equation}
 X^{(3)}
 \begin{bmatrix}
@@ -260,6 +261,7 @@ X^{(3)}
 1.84713
 \end{bmatrix}
 \end{equation}\\
+\\
 \\
 \begin{equation}
 X^{(4)}
