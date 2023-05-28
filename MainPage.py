@@ -178,43 +178,57 @@ Tomando como vector inicial $ X^{(0)} $ = $ \begin{bmatrix} -1 \\ 0 \\ 2\ end {b
 """
 st.latex(r"""
        $X^{(1)} =
+       \begin{equation}
        \begin{bmatrix}
         -3\\ 
        \\
      -2 \\ 
-     2\end{bmatrix} -
+     2\
+     end{bmatrix}
+     \end{equation}-
+     \begin{equation}
      \begin{bmatrix}
       -2 & 0 & 4\\
-       \\
       0 & -1& 4\\
-      \\
       2 & 0 & 5
-      \end{bmatrix}^{-1} 
+      \end{bmatrix}
+    \end{equation}^{-1} 
+    \begin{equation}
        \begin{bmatrix}
        1\\ 
        \\
        1 \\ 
        \\
        1\
-      end{bmatrix} = 
+      end{bmatrix}
+      end{equation}^{-1}= 
+      \begin{equation}
        \begin{bmatrix}
          -0.82571\\
          \\
        0.1428 \\ 
         \\
         1.8571
-        \end{bmatrix} 
+        \end{bmatrix}
+        \end{equation}
          """) 
  
 """
   Con estos dos valores iniciales  se aplica la forma iterativa de Broyden 
 """
 st.latex(r"""
+\begin{equation}
+\begin{bmatrix}
+-0.8571\\
+0.1428\\
+1.8571 
+\end{bmatrix}
+\end{equation} -
   \begin{equation}
 \begin{bmatrix}
-6 & 8 & 1\\
-2 & 9 & 3\\
-4 & 5 & 1
+-0.7139 & -0.02174 & 0.058696\\
+0.28261 & -1.02174 & 0.58696\\
+-0.28261 & 0.02174 & 0.41304
 \end{bmatrix}
 \end{equation}
 """)
