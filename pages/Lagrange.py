@@ -59,4 +59,4 @@ dado que se tienen 3 puntos, el polinomio que se puede construir es de a lo más
 entonces, la densidad del sodio a una temperatura t=251°C es de d= 890.5566117 Kg/m^{3}
 
 aquí  cabe aclarar que, aunque con el método de lagrange se puede obtener una expresión ese que potencias que aproxime a la función que describe la table datos, esto no es una práctica común, porque generalmente se aplica mediante un programa computadora y porque existen métodos más eficientes para este fin.
-
+"""
