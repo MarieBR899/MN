@@ -131,7 +131,7 @@ st.latex(r"""
     """)
 
 """
-Se puede reescribir como:  
+Se puede reescribir como: $ (A^{(k)})^{-1} = (A+XY^{(t)})^{-1} $  lo que se ajusta  el teorema, sustituyendo en la ecuación y desarrollando
 """
 st.latex(r"""
     (A^{(k)})^{-1} = (A+XY^{(t)})^{-1}
@@ -140,10 +140,9 @@ st.latex(r"""
 """
 lo que se ajusta  el teorema, sustituyendo en la ecuación y desarrollando
 """
-
 st.latex(r"""
-    (A^{(k)})^{-1} = (A^{(k-1)})^{-1} +[\frac{[\Delta X^{(k)}-A^{(k-1)}^{-1}-\Delta F^{(k)}](\Delta X^{(k)})^{t}(A^{(k-1)})^{-1}}{\Delta X^{(k)})^{t}(A^{(k-1)}){-1} \Delta F^{(k)}}
-  """) 
+    (A^{(k})^{-1} = (A^{(k-1})^{-1}+[\frac{[\Delta X^{(k)}-(A^{(k-1)})^{-1} \Delta F^{(k)}](\Delta X^{(k)}^{t}(A^{(k-1)})^{-1}}{(\Delta X^{(k)})^{t}(A^{(k-1)^{-1} \Delta F}^{k}}
+    """)
 
 """
  Esta formula  permite calcular la invesa de una matriz  con sumas y multiplicaciones de matrices, con lo que se reduce el esfuerzo computacuonal al orden $n^{2}$.
