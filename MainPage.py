@@ -3,13 +3,9 @@ import pandas as pd
 import numpy as np
 tab1, tab2, tab3 = st.tabs(["Definiciones","Ejemplos","Aplicaciones"])
 with tab1:
- 
+ st.title('ProyectoMN')
  st.title(":blue[Metodo de Broyden]")
-st.title('ProyectoMN')
 
-'''
-Metodo de Broyden  
-'''
 '''
 El metodo cuasi Newton o método de Broyden 
 Como se menciono anteriormente el metodo de Newton tiene como principal desventaja  el cálculo y evaluación de las derivadas parciales ,asi como lainversion
@@ -138,14 +134,15 @@ st.latex(r"""
 Se puede reescribir como:  
 """
 st.latex(r"""
-   (A^{(k)})^{-1}$ = $(A+XY^{Y^{(t)}
-    """)
+   (A^{(k)})^{-1} = (A+XY^{Y^{(t)}
+ """)
+
 """
 lo que se ajusta  el teorema, sustituyendo en la ecuación y desarrollando
 """
 
 st.latex(r"""
-    (A^{(k)})^{-1} = (A^{(k-1)})^{-1} +[\frac{[\Delta X^{(k)}-A^{(k-1)}^{-1}-\Delta F^{(k)}](\Delta X^{(k)})^{t}(A^{(k-1)})^{-1}}{\Delta X^{(k)})^{t} (A^{(k-1)}){-1} \Delta F^{(k)}}
+    (A^{(k)})^{-1} = (A^{(k-1)})^{-1} +[\frac{[\Delta X^{(k)}-A^{(k-1)}^{-1}-\Delta F^{(k)}](\Delta X^{(k)})^{t}(A^{(k-1)})^{-1}}{\Delta X^{(k)})^{t}(A^{(k-1)}){-1} \Delta F^{(k)}}
   """) 
 
 """
@@ -160,53 +157,59 @@ st.latex(r"""
 
 
 """
- Si el método  se aplica  como se describe  en las ecuaciones anteriores el numero d evaluaciones funcionales disminuye  de $n^{2}+n a n$ las
+ Si el método  se aplica  como se describe  en las ecuaciones anteriores el numero d evaluaciones funcionales disminuye  de $n^{2}+n/a/ n$ las
  necesarias para evaluar $F(X^{(i)}$, pero todavía se requieren $O(n{3})$ cálculos para resolver el sistema lineal asociado de $nxn$
  """
  
 with tab2: 
- st.title(":blue[Ejercicio:]")
+      st.title(":blue[Ejercicio:]")
  
- """
- Ejemplo: 
- Resolver  el siguiente sistema de ecuaciones no lineales empleando el método de Broyden (inversa por el teorema de Sherman Morrison).
-"""                                                      
-""" Raíces (-0.8471,0.1529,1.8471),
-     (1.1805,2.1805,-0.1805) """
+     """
+      Ejemplo: 
+      Resolver  el siguiente sistema de ecuaciones no lineales empleando el método de Broyden (inversa por el teorema de Sherman Morrison).
+      """                                                      
+      """ Raíces (-0.8471,0.1529,1.8471),
+      
+         (1.1805,2.1805,-0.1805) """
 
 st.latex(r"""
-    f_1(x,y,z) = x^{2}-x + y^{2} + z^{2}-5=0  \\               
-    f_2(x,y,z) = x^{2}+ y^{2} -y + z^{2}-4=0  \\                     
-    f_3(x,y,z) = x^{2}+ y^{2}+ z^{2}+z -6 =0
-    """) 
+       f_1(x,y,z) = x^{2}-x + y^{2} + z^{2}-5=0  \\               
+       f_2(x,y,z) = x^{2}+ y^{2} -y + z^{2}-4=0  \\                     
+       f_3(x,y,z) = x^{2}+ y^{2}+ z^{2}+z -6 =0
+       """) 
  
 """
 Tomando como vector inicial $ X^{(0)} $ = $ \begin{bmatrix} -1 \\ 0 \\ 2\ end {bmatrix} $, se calcula $ X^{(1)}$ por el método de Newton
 """
-
 st.latex(r"""
-$X^{(1)} =
-\begin{bmatrix}
--3\\ 
--2 \\ 
-2\end{bmatrix} -
-\begin{bmatrix}
--2 & 0 & 4\\
-0 & -1& 4\\
-2 & 0 & 5
+   $X^{(1)} =
+   \begin{bmatrix}
+  -3\\ 
+  \\
+  -2 \\ 
+  2\end{bmatrix} -
+  \begin{bmatrix}
+   -2 & 0 & 4\\
+   \\
+   0 & -1& 4\\
+   \\
+   2 & 0 & 5
 \end{bmatrix}^{-1} 
-\begin{bmatrix}
-1\\ 
-1 \\ 
-1\
-end{bmatrix} 
-= 
-\begin{bmatrix}
--0.82571\\
-0.1428 \\ 
-1.8571
-\end{bmatrix} 
-""") 
+    \begin{bmatrix}
+    1\\ 
+    \\
+    1 \\ 
+    \\
+    1\
+   end{bmatrix} = 
+    \begin{bmatrix}
+    -0.82571\\
+    \\
+    0.1428 \\ 
+    \\
+     1.8571
+     \end{bmatrix} 
+     """) 
  
 
  
