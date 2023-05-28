@@ -133,12 +133,12 @@ st.latex(r"""
     """)
 
 """
-Se puede reescribir como $(A^{(k)})^{-1}$ = $(A + XY^{Y^{(t)}$,  lo que se ajusta  el teorema, sustituyendo en la ecuación y desarrollando
+Se puede reescribir como $(A^{(k)})^{-1}$ = $(A+XY^{Y^{(t)}$,  lo que se ajusta  el teorema, sustituyendo en la ecuación y desarrollando
 """
 
 st.latex(r"""
-    (A^{(k)})^{-1} = (A^{(k-1)})^{-1}+ [\frac{[\Delta X^{(k)}-A^{(k-1)}^{-1}-\Delta F^{(k)}](\Delta X^{(k)})^{t}}(A^{(k-1)})^{-1}{||(\Delta X^{(k)})^{t} (A^{(k-1)}){-1} \Delta F^{(k)}}
-    (1.1) """) (1.1)
+    (A^{(k)})^{-1} = (A^{(k-1)})^{-1}+ [\frac{[\Delta X^{(k)}-A^{(k-1)}^{-1}-\Delta F^{(k)}](\Delta X^{(k)})^{t}}(A^{(k-1)})^{-1}}{||(\Delta X^{(k)})^{t} (A^{(k-1)}){-1} \Delta F^{(k)}}
+    /(1.1) """) (1.1)
 """
  Esta formula  permite calcular la invesa de una matriz  con sumas y multiplicaciones de matrices, con lo que se reduce el esfuerzo computacuonal al orden $n^{2}$.
  Una vez determinada $X{(2)}$, el método se repite  para determinar $X{(2)}$, usando $(A^{(2)})^{-1}$ que se obtiene a partir de (1.1) con $A^{(1)}$ y con $X^{(2)}$, y $X^{(1)}$
