@@ -139,7 +139,7 @@ Se puede reescribir como $(A^{(k)})^{-1}$ = $(A + XY^{Y^{(t)}$,  lo que se ajust
 st.latex(r"""
     (A^{(k)})^{-1} = (A^{(k-1)})^{-1}+ [\frac{[\Delta X^{(k)}-A^{(k-1)}^{-1}-\Delta F^{(k)}](\Delta X^{(k)})^{t}}(A^{(k-1)})^{-1}{||(\Delta X^{(k)})^{t} (A^{(k-1)}){-1} \Delta F^{(k)}}
     (1.1) """) (1.1)
- """
+"""
  Esta formula  permite calcular la invesa de una matriz  con sumas y multiplicaciones de matrices, con lo que se reduce el esfuerzo computacuonal al orden $n^{2}$.
  Una vez determinada $X{(2)}$, el método se repite  para determinar $X{(2)}$, usando $(A^{(2)})^{-1}$ que se obtiene a partir de (1.1) con $A^{(1)}$ y con $X^{(2)}$, y $X^{(1)}$
  en lugar de $X^{(1)}$ y $X^{(0)}$. En general, una vez determinado $X^{(i)}$ se calcula $X^{(i+1)}$ por medio de: 
@@ -148,14 +148,14 @@ st.latex(r"""
 st.latex(r"""
     X^{(k+1)} = X^{(k)}-(A^{(k)})^{-1}F(X^{(k)})
  """) 
- 
- """
+
+"""
  Si el método  se aplica  como se describe  en las ecuaciones anteriores el numero d evaluaciones funcionales disminuye  de $n^{2}+n a n$ las
  necesarias para evaluar $F(X^{(i)}$, pero todavía se requieren $O(n{3})$ cálculos para resolver el sistema lineal asociado de $nxn$
  
  Ejemplo: 
  Resolver  el siguiente sistema de ecuaciones no lineales empleando el método de Broyden (inversa por el teorema de Sherman Morrison).
- """
+"""
  st.latex(r"""
     f_1(x,y,z) = x^{2}-x + y^{2} + z^{2}-5=0                 Raíces (-0.8471,0.1529,1.8471),
     f_2(x,y,z) = x^{2}+ y^{2} -y + z^{2}-4=0                        (1.1805,2.1805,-0.1805) 
