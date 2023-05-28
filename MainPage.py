@@ -178,14 +178,27 @@ Tomando como vector inicial $X^{(0)}$ = $\begin{smallmatrix} -1 \\ 0 \\ 2\ end{s
 """
 
 st.latex(r"""
-$X^{(1)} =\begin{smallmatrix}-3\\ -2 \\ 2\end{smallmatrix} - \begin{equation}
-\begin{vmatrix}
--2 &0 & 4\\
+$X^{(1)} =
+\begin{smallmatrix}
+-3\\ 
+-2 \\ 
+2\end{smallmatrix} -
+\begin{bmatrix}
+-2 & 0 & 4\\
 0 & -1& 4\\
 2 & 0 & 5
-\end{vmatrix}
-\end{equation}^{-1}  \begin{smallmatrix}1\\ 1 \\ 1\end{smallmatrix} = \begin{smallmatrix}-0.82571\\ 0.1428 \\ 1
-8571\end{smallmatrix} 
+\end{bmatrix}^{-1} 
+\begin{bmatrix}
+1\\ 
+1 \\ 
+1\
+end{bmatrix} 
+= 
+\begin{bmatrix}
+-0.82571\\
+0.1428 \\ 
+1.8571
+\end{bmatrix} 
 
      """) 
  
