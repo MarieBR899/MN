@@ -237,7 +237,35 @@ X^{(2)}
 1.84783 
 \end{bmatrix}
 
+\end{equation}\\
+
+\begin{equation}
+X^{(3)}
+\begin{bmatrix}
+-0.84783\\
+0.15217\\
+1.84783 
+\end{bmatrix}
+-
+\begin{bmatrix}
+-0.72118 & -0.04825 & 0.60589\\
+0.27882 & -1.04825 & 0.60589\\
+-0.27882 & 0.04825 & 0.39411
+\end{bmatrix}
+\begin{bmatrix}
+0.00425\\
+0.00425\\
+0.00425 
+\end{bmatrix}
+=
+\begin{bmatrix}
+-0.84713\\
+0.15287\\
+1.84713
+\end{bmatrix}
+
 \end{equation}
+
 """)
   
     
