@@ -6,7 +6,7 @@ with tab1:
  st.title('ProyectoMN')
  st.title(":blue[Interpolación de Lagrange]")
   
-  """
+ """
  Interpolación polinomial
  
  
