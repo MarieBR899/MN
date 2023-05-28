@@ -234,9 +234,9 @@ X^{(2)}
 \end{bmatrix}
 
 \end{equation}
+""")
 
-\\
-\\
+st.latex(r"""
 \\
 \begin{equation}
 X^{(3)}
@@ -262,9 +262,10 @@ X^{(3)}
 0.15287\\
 1.84713
 \end{bmatrix}
-\end{equation}\\ \\
-\\
+\end{equation}\\ 
+""")
 
+st.latex(r"""
 \begin{equation}
 X^{(4)}
 \begin{bmatrix}
@@ -290,8 +291,6 @@ X^{(4)}
 1.84713
 \end{bmatrix}
 \end{equation}\\
-
-
 """)
   
     
