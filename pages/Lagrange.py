@@ -15,14 +15,15 @@ Por ejemplo y es posible encontrar una recta única que pasa por dos puntos,y es
 
 La ecuación polinomial para $y$  se puede modelar mediante:
 """
-st.latex(r"""
+st.latex(r""" 
 y= a_0 +a_1x+a_2x^{2}+...+a_nx^{n}
 """)
 """
 y los $n+1$ puntos se pueden usar para escribir n+1 ecuaciones para los coeficientes a_i.Estas ecuación son:
 """
-st.latex(r"""
-y_j = a_0 + a_1_ x_j + a2_ x_j^{2} +...+a_nxj^{n}}
+
+st.latex(r""" 
+y_j = $a_0$ + a_1_ x_j + a2_ x_j^{2} +...+a_nxj^{n}}
 """)
 
 st.latex("""
