@@ -44,20 +44,53 @@ Considérese el problema de determinar el polinomio de grado uno que pasa por lo
 (x_0,y_0) y (x_1,x_2). Este problema es el mismo que el de aproximar una función $f$,para la cual 
 $f(x_0)$ =y_0 y fx_1=y_1 por medio de un polinomio de primer grado, interpolando entre,o conincidiendo con,
 los valores de $f(x)$ en los puntos dados.
+"""
+"""
+considerese el polinomio 
 
-tt
+"""
+
+st.latex(r""" 
+L_0(x)=\frac{ (x-x_1)}{(x_0-x_1)}
+L_1(x)\frac{ (x-x_0)}{(x_1-x_0)}
+P(x)=  L_0(x)y_0+L_1(x)y_1
+""")
+"""
+el polinomio lineal que pasa por  $ (x_0,f(_0))$ y$ (x_1,f(_1)) $ se construye usando los cocientes
+"""
+
+st.latex(r"""L_0(x)=\frac{ (x-x_1)}{(x_0-x_1)}
+L_1(x)\frac{ (x-x_0)}{(x_1-x_0)}\\
+
+P(x)=  L_0(x)y_0+L_1(x)y_1
+""")
+"""
+cuando $x=x_0$
+"""
+st.latex(r""" 
+P(x)=\frac{ (x_0-x_1)}{(x_0-x_1)}y_0 +\frac{ (x_0-x_0)}{(x_1-x_0)}y_1 =y_0=f(x_0)
+""")
+"""
+$L_0(x_0)=1$, mientras que $L_1(x_0)=0$
+"""
+"""
+cuando $x=x1$
+"""
+st.latex(r""" 
+P(x)=\frac{ (x_1-x_1)}{(x_0-x_1)}y_0 +\frac{ (x_1-x_0)}{(x_1-x_0)}y_1 =y_1=f(x_1)\\
+L_0(x_1)=0 y L_1(x_1)=1
+""")
+
+"""
+Para generalizar el concepto de interpolación lineal, considérese la construcción de un polinomio a lo más grado $n$ que pase por los $n+1$ puntos $(x_0,f(x_0))$, $(x_1,f(x_1))$,$ (x_2,f(x_2))$, …, $(x_n,f(x_n))$, 
+Para lo que se quiere, para cada $k=0,1…, n$, un cociente $L_k(x)$ con la propiedad de que $L_k(x_i) =0$ Cuando $i$ distinto de $k$, por lo que el numerador debe contener el término:
+"""
+st.latex(r"""
+(x-x_0)(x-x_1)...(x-x_k-1)(x-x_k+1)...(x-x_n)
+""")
 
 
-el polinomio lineal que pasa por x cero se construye usando los cocientes
-
-
-
-cuando x igual AX cero
-cuando x igual AX uno 
-
-Para generar esa cosa de interpolación lineal considérese la construcción de un polinomio a lo más grado n que pase por los n+1 puntos (x_0,f(x_0)), (x_1,f(x_1)), (x_2,f(x_2)), …, (x_n,f(x_n)), Para lo que se quiere, para cada k=0,1…, n, un cociente L_k(x) con la propiedad de que L_k(x_i) =0 Cuando i distinto de k , por lo que el numerador debe contener el término:
-
-
+""""
 para satisfacer que $ L_k(X_k) =1 $, el denominador debe ser igual al numerador anterior cuando $ x=x_k $, por lo que cocientes tienen la forma:
 
 
