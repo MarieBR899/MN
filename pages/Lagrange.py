@@ -10,14 +10,27 @@ with tab1:
  Interpolación polinomial
  
  
-Se tiene un conjunto de n más uno puntos para representar ayer como una función de valuación única de x, es posible encontrar un polinomio único de grado n qué pasa por dos puntos, hp y es posible encontrar un polinomio cuadrático único que pasa por 3 puntos
-la ecuación polinomial para y  se puede modelar mediante:
+Se tiene un conjunto de $n+1$ puntos $(x_i, y_i)$ para $i=0,1,...,n$ representar a $y$ como una función de valuación única de $x$, es posible encontrar un polinomio único de grado $n$ qué pasa por dos puntos.
+Por ejemplo y es posible encontrar una recta única que pasa por dos puntos,y es posible encontrar un polinomio cuadrático único que pasa por tres puntos.
+
+La ecuación polinomial para $y$  se puede modelar mediante:
 """
-  
+st.latex(r"""
+y= a_0 +a_1x+a_2x^{2}+...+a_nx^{n}
+""")
+"""
+y los n+1 puntos se pueden usar para escribir n+1 ecuaciones para los coeficientes a_i.Estas ecuación son:
+"""
+st.latex("""
+y_j= a_0+a1_x_j+a3_x_j^{2}+...+a_nxj^{n} /con/ j=0,1,2,...,n
+""")
 
 """
-y constituyen un sistema de ecuaciones algebraicas lineales. La solución de este sistema se puede terminar aplicando métodos numéricos para ese fin. Sin embargo, la matriz de coeficientes, denominada matriz de vander homonde, es sensible al mal planeamiento. Además, sobre el sistema de esa manera ineficaz de obtener una representación para y
-por lo anterior, se opta por otros métodos por lineales que representan formas más eficaces de predecir y para un valor dado de $x$. La apariencia de estos modelos puede ser muy distinta a la del modelo antes mencionado; sin embargo, producen la misma curva única que pasa por los n puntos.
+y constituyen un sistema de ecuaciones algebraicas lineales. La solución de este sistema se puede terminar aplicando métodos numéricos para ese fin. Sin embargo, la matriz de coeficientes, denominada matriz de vander homonde, es sensible al mal planeamiento. 
+Además, sobre el sistema de esa manera ineficaz de obtener una representación para $y$
+
+Por lo anterior, se opta por otros métodos por lineales que representan formas más eficaces de predecir y para un valor dado de $x$.
+La apariencia de estos modelos puede ser muy distinta a la del modelo antes mencionado; sin embargo, producen la misma curva única que pasa por los $n$ puntos.
 
 Fórmula de lagrange
 *Es una técnica que permite encontrar el máximo o mínimo de una función de varias 
@@ -25,9 +38,13 @@ dimensiones cuando hay alguna restricción en los valores de entrada que puede u
 
 
 Los polinomios de lagrange se pueden determinar especificando algunos de los puntos en el plano por los cuales debe pasar.
-Consideras el problema de determinar el polinomio de grado uno que pasa por los puntos distintos…. Este problema es el mismo que el de aproximar una función f para la cual…., por medio de un polinomio de primer grado, interpolando entre,  o coincidiendo con, los valores de FDX en los puntos dados.
+Consideras el problema de determinar el polinomio de grado uno que pasa por los puntos distintos…. Este problema es el mismo que el de aproximar una función f para la cual….,
+por medio de un polinomio de primer grado, interpolando entre,  o coincidiendo con, los valores de FDX en los puntos dados.
 
-Considérese el polinomio:
+Considérese el problema de fererminar un  polinomio de grado uno que pase por los puntos distintos
+(x_0,y_0) y (x_1,x_2). Este problema es el mismo que el de aproximar una función $f$,para la cual $f(x_0)$ =y_0 y fx_1=y_1 ppr medio de un polinomio de promer grado
+
+
 
 el polinomio lineal que pasa por x cero se construye usando los cocientes
 
