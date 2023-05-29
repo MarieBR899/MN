@@ -25,9 +25,6 @@ st.latex(r"""
 y_j = a_0 + a_1_ x_j + a2_ x_j^{2} + ... +a_nx_j^{n}}
 """)
 
-st.latex("""
-y_j = a_0+a1_x_j+a2_x_j^{2}+...+a_nxj^{n}   con  j=0,1,2,...,n
-""")
 
 """
 y constituyen un sistema de ecuaciones algebraicas lineales. La solución de este sistema se puede terminar aplicando métodos numéricos para ese fin. 
