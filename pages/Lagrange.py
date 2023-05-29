@@ -22,7 +22,7 @@ y= a_0 +a_1x+a_2x^{2}+...+a_nx^{n}
 y los $n+1$ puntos se pueden usar para escribir n+1 ecuaciones para los coeficientes $a_i$. Estas ecuaciones son:
 """
 st.latex(r""" 
-y_j = a_0 + a_1_ x_j + a2_ x_j^{2} +...+a_nx_j^{n}}
+y_j = a_0 + a_1_ x_j + a2_ x_j^{2} + ... +a_nx_j^{n}}
 """)
 
 st.latex("""
