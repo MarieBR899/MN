@@ -26,7 +26,8 @@ y_j= a_0+a1_x_j+a3_x_j^{2}+...+a_nxj^{n} /con/ j=0,1,2,...,n
 """)
 
 """
-y constituyen un sistema de ecuaciones algebraicas lineales. La solución de este sistema se puede terminar aplicando métodos numéricos para ese fin. Sin embargo, la matriz de coeficientes, denominada matriz de vander homonde, es sensible al mal planeamiento. 
+y constituyen un sistema de ecuaciones algebraicas lineales. La solución de este sistema se puede terminar aplicando métodos numéricos para ese fin. 
+Sin embargo, la matriz de coeficientes, denominada matriz de vander homonde, es sensible al mal planeamiento. 
 Además, sobre el sistema de esa manera ineficaz de obtener una representación para $y$
 
 Por lo anterior, se opta por otros métodos por lineales que representan formas más eficaces de predecir y para un valor dado de $x$.
@@ -38,12 +39,13 @@ dimensiones cuando hay alguna restricción en los valores de entrada que puede u
 
 
 Los polinomios de lagrange se pueden determinar especificando algunos de los puntos en el plano por los cuales debe pasar.
-Consideras el problema de determinar el polinomio de grado uno que pasa por los puntos distintos…. Este problema es el mismo que el de aproximar una función f para la cual….,
-por medio de un polinomio de primer grado, interpolando entre,  o coincidiendo con, los valores de FDX en los puntos dados.
+Considérese el problema de determinar el polinomio de grado uno que pasa por los puntos distintos. 
 
-Considérese el problema de fererminar un  polinomio de grado uno que pase por los puntos distintos
-(x_0,y_0) y (x_1,x_2). Este problema es el mismo que el de aproximar una función $f$,para la cual $f(x_0)$ =y_0 y fx_1=y_1 ppr medio de un polinomio de promer grado
+(x_0,y_0) y (x_1,x_2). Este problema es el mismo que el de aproximar una función $f$,para la cual 
+$f(x_0)$ =y_0 y fx_1=y_1 por medio de un polinomio de primer grado, interpolando entre,o conincidiendo con,
+los valores de $f(x)$ en los puntos dados.
 
+tt
 
 
 el polinomio lineal que pasa por x cero se construye usando los cocientes
