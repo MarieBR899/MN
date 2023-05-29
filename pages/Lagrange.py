@@ -8,22 +8,21 @@ with tab1:
   
  """
  Interpolación polinomial
- 
- 
+  
 Se tiene un conjunto de $n+1$ puntos $(x_i, y_i)$ para $i=0,1,...,n$ representar a $y$ como una función de valuación única de $x$, es posible encontrar un polinomio único de grado $n$ qué pasa por dos puntos.
 Por ejemplo y es posible encontrar una recta única que pasa por dos puntos,y es posible encontrar un polinomio cuadrático único que pasa por tres puntos.
-
 La ecuación polinomial para $y$  se puede modelar mediante:
 """
+ 
 st.latex(r""" 
 y= a_0 +a_1x+a_2x^{2}+...+a_nx^{n}
 """)
-"""
-y los $n+1$ puntos se pueden usar para escribir n+1 ecuaciones para los coeficientes a_i.Estas ecuación son:
-"""
 
+"""
+y los $n+1$ puntos se pueden usar para escribir n+1 ecuaciones para los coeficientes $a_i$. Estas ecuaciones son:
+"""
 st.latex(r""" 
-y_j = $a_0$ + a_1_ x_j + a2_ x_j^{2} +...+a_nxj^{n}}
+y_j = a_0 + a_1_ x_j + a2_ x_j^{2} +...+a_nx_j^{n}}
 """)
 
 st.latex("""
