@@ -23,7 +23,7 @@ y los $n+1$ puntos se pueden usar para escribir n+1 ecuaciones para los coeficie
 """
 
 st.latex(r""" 
-y= a_0 +a_1x_j+a_2x_j^{2}+...+a_nx_j^{n}
+y= a_0 +a_1x_j+a_2x_j^{2}+...+a_nx_j^{n} \con\ j =0, 1, 2 ,...,n 
 """)
 
 
