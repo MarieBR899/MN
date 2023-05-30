@@ -101,6 +101,7 @@ L_k(x)=\frac{ (x-x_0)(x-x_1)...(x-x_k-1)(x-x_k+1)...(x-x_n)}{(x_k-x_0)(x_k-x_1).
 
 """)
 """
+
 para cada $k=0,1…, n$; el cual se denomina el cociente de lagrange. A partir del cual se define el polinomio de interpolación de lagrange en el siguiente teorema.
 
 Teorema
