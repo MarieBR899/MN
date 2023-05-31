@@ -98,7 +98,7 @@ para satisfacer que $ L_k(X_k) =1 $, el denominador debe ser igual al numerador 
 """
 
 st.latex(r""" 
-L_k(x)=\frac{ (x-x_0)(x-x_1)...(x-x_k-1)(x-x_k+1)...(x-x_n)}{(x_k-x_0)(x_k-x_1)...(x_k-x_k-1)(x_k-x_k+1)...(x_k-x_n)}= \[
+L_k(x)=\frac{ (x-x_0)(x-x_1)...(x-x_k-1)(x-x_k+1)...(x-x_n)}{(x_k-x_0)(x_k-x_1)...(x_k-x_k-1)(x_k-x_k+1)...(x_k-x_n)}=
 \prod_{i=0}{i \neq k}^{n}x_{i}= \frac{(x-x_i)}{(x_k-x_i)}
 
 """)
