@@ -185,10 +185,10 @@ X^{(1)}=
 0\\
 2 
 \end{bmatrix}
-\end {equation}   se calcula $ X^{(1)}$ por el método de Newton
+\end {equation}
 """)
 """
- ,se calcula $ X^{(1)}$ por el método de Newton
+ , se calcula $ X^{(1)}$ por el método de Newton
 """
 st.latex(r"""
 \begin{equation}
