@@ -101,7 +101,7 @@ st.latex(r"""  A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta
  Sin embargo, la inversión de $A^{(k)}$ en cada iteración significa un esfuerzo computacional considerable  que puede reducirse  empleando la forma de 
  inversión de Sherman Morrison.
  
-*** Teorema de Sherman Morrison ***: si A es una matriz de nxn no singular y Xy Y son vectores, entonces $A+XY^{t}$ no es singular, 
+Teorema de Sherman Morrison: si A es una matriz de nxn no singular y Xy Y son vectores, entonces $A+XY^{t}$ no es singular, 
  siempre que
 """
 st.latex(r""" 
@@ -175,10 +175,19 @@ st.latex(r"""
        """) 
  
 """
-Tomando como vector inicial $ X^{(0)} $ = $ \[ \begin{matrix} -1 \\ 0 \\ 2\ end {matrix} \]$, se calcula $ X^{(1)}$ por el método de Newton
+Tomando como vector inicial $ X^{(0)} $ = $ \begin{bmatrix} 
+                                                   -1 \\ 
+                                                   0 \\ 
+                                                   2 
+                                                   \end {bmatrix}
+                                                   \]$, se calcula $ X^{(1)}$ por el método de Newton
 """
 st.latex(r"""
-\[ \begin{matrix} -1 \\ 0 \\ 2\ end {matrix} \]
+\[ \begin{bmatrix} 
+-1\\
+0 \\ 
+2
+\end {bmatrix}\]
 """)
 
 st.latex(r"""
