@@ -175,20 +175,16 @@ st.latex(r"""
        """) 
  
 """
-Tomando como vector inicial $ X^{(0)} $ = $ \begin{bmatrix} 
-                                                   -1 \\ 
-                                                   0 \\ 
-                                                   2 
-                                                   \end {bmatrix}
-                                                   \]$, se calcula $ X^{(1)}$ por el método de Newton
+Tomando como vector inicial $ X^{(0)}... se calcula $ X^{(1)}$ por el método de Newton
 """
 st.latex(r"""
-\[ \begin{bmatrix} 
+\begin{equation}
+X^{(0)}=
+\begin{bmatrix}
 -1\\
-0 \\ 
-2
-\end {bmatrix}\]
-""")
+0\\
+2 
+\end{bmatrix}
 
 st.latex(r"""
 \begin{equation}
