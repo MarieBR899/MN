@@ -175,7 +175,7 @@ st.latex(r"""
        """) 
  
 """
-Tomando como vector inicial $ X^{(0)} $ = $ \begin{equation}\begin{bmatrix} -1 \\ 0 \\ 2\ end {bmatrix}\end{equation}$, se calcula $ X^{(1)}$ por el método de Newton
+Tomando como vector inicial $ X^{(0)} $ = $ \begin{bmatrix} -1 \\ 0 \\ 2\ end {bmatrix} $, se calcula $ X^{(1)}$ por el método de Newton
 """
 st.latex(r"""
 \begin{equation}
