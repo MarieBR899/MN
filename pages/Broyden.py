@@ -185,6 +185,7 @@ X^{(0)}=
 0\\
 2 
 \end{bmatrix}
+""")
 
 st.latex(r"""
 \begin{equation}
