@@ -100,8 +100,7 @@ st.latex(r"""  A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta
 """
  Sin embargo, la inversión de $A^{(k)}$ en cada iteración significa un esfuerzo computacional considerable  que puede reducirse  empleando la forma de 
  inversión de Sherman Morrison.
-"""
- st.title('Teorema de Sherman Morrison:') """si A es una matriz de nxn no singular y Xy Y son vectores, entonces $A+XY^{t}$ no es singular, 
+Teorema de Sherman Morrison:si A es una matriz de nxn no singular y Xy Y son vectores, entonces $A+XY^{t}$ no es singular, 
  siempre que
 """
 st.latex(r""" 
