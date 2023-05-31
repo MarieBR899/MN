@@ -172,12 +172,12 @@ with tab2:
        f_1(x,y,z) = x^{2}-x + y^{2} + z^{2}-5=0  \\               
        f_2(x,y,z) = x^{2}+ y^{2} -y + z^{2}-4=0  \\                     
        f_3(x,y,z) = x^{2}+ y^{2}+ z^{2}+z -6 =0
-       """) 
- 
-       """
-       Tomando como vector inicial $ X^{(0)}$ 
-       """
-       st.latex(r"""
+       """)
+    with tab2: 
+ """
+ Tomando como vector inicial $ X^{(0)}$ 
+ """
+st.latex(r"""
        \begin{equation}
        X^{(1)}=
        \begin{bmatrix}
@@ -190,7 +190,7 @@ with tab2:
       """
       se calcula $ X^{(1)}$ por el método de Newton
      """
-    st.latex(r"""
+st.latex(r"""
     \begin{equation}
     X^{(1)}=
     \begin{bmatrix}
