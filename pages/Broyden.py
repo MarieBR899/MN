@@ -302,9 +302,9 @@ with tab2:
        \end{equation}\\
         """)
   
-       """
+      """
        Entonces,una raiz  es: 
-       """
+      """
       st.latex(r"""
         \\
        X= \begin{bmatrix}
