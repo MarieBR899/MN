@@ -243,4 +243,78 @@ with tab2:
        -0.84783\\
         0.15217\\
         1.84783 
+        \end{bmatrix}
+        \end{equation}
+        """)
+      st.latex(r"""
+      \\
+      \begin{equation}
+      X^{(3)}
+      \begin{bmatrix}
+      -0.84783\\
+       0.15217\\
+       1.84783 
        \end{bmatrix}
+       -
+       \begin{bmatrix}
+       -0.72118 & -0.04825 & 0.60589\\
+        0.27882 & -1.04825 & 0.60589\\
+       -0.27882 & 0.04825 & 0.39411
+       \end{bmatrix}
+       \begin{bmatrix}
+       0.00425\\
+       0.00425\\
+       0.00425 
+       \end{bmatrix}
+       =
+       \begin{bmatrix}
+       -0.84713\\
+        0.15287\\
+        1.84713
+        \end{bmatrix}
+        \end{equation}\\ 
+        """)
+       st.latex(r"""
+       \begin{equation}
+        X^{(4)}
+       \begin{bmatrix}
+       -0.84713\\
+        0.15287\\
+        1.84713 
+        \end{bmatrix}
+        -
+       \begin{bmatrix}
+       -0.72118 & -0.05013 & 0.60724\\
+        0.27882 & -1.05013 & 0.60724\\
+       -0.27882 & 0.05013 & 0.39276
+       \end{bmatrix}
+       \begin{bmatrix}
+        0.00002\\
+        0.00002\\
+        0.00002
+       \end{bmatrix}
+       =
+       \begin{bmatrix}
+       -0.84713\\
+        0.15287\\
+        1.84713
+       \end{bmatrix}
+       \end{equation}\\
+        """)
+  
+       """
+       Entonces,una raiz  es: 
+       """
+       st.latex(r"""
+        \\
+       X= \begin{bmatrix}
+       -0.84713\\
+        0.15287\\
+        1.84713
+       \end{bmatrix}
+        """)
+
+
+
+
+
