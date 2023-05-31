@@ -216,6 +216,36 @@ with tab2:
       \end{bmatrix}
       \end{equation}
       """) 
+      """
+      Con estos dos valores iniciales  se aplica la forma iterativa de Broyden 
+      """
+      st.latex(r"""
+      \begin{equation}
+      X^{(2)}
+      \begin{bmatrix}
+      -0.8571\\
+       0.1428\\
+       1.8571 
+       \end{bmatrix}
+       -
+       \begin{bmatrix}
+       -0.7139 & -0.02174 & 0.058696\\
+        0.28261 & -1.02174 & 0.58696\\
+       -0.28261 & 0.02174 & 0.41304
+       \end{bmatrix}
+       \begin{bmatrix}
+       0.06122\\
+       0.06122\\
+       0.06122 
+       \end{bmatrix}
+       =
+       \begin{bmatrix}
+       -0.84783\\
+        0.15217\\
+        1.84783 
+       \end{bmatrix}
+
+
 
 
 
