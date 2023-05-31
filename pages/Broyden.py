@@ -173,8 +173,8 @@ with tab2:
        f_2(x,y,z) = x^{2}+ y^{2} -y + z^{2}-4=0  \\                     
        f_3(x,y,z) = x^{2}+ y^{2}+ z^{2}+z -6 =0
        """)
-       """
+      """
        Tomando como vector inicial $ X^{(0)}$ 
-       """
+      """
 
  
