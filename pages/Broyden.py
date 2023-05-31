@@ -274,7 +274,7 @@ with tab2:
         \end{bmatrix}
         \end{equation}\\ 
         """)
-       st.latex(r"""
+      st.latex(r"""
        \begin{equation}
         X^{(4)}
        \begin{bmatrix}
@@ -305,7 +305,7 @@ with tab2:
        """
        Entonces,una raiz  es: 
        """
-       st.latex(r"""
+      st.latex(r"""
         \\
        X= \begin{bmatrix}
        -0.84713\\
