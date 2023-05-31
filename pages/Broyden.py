@@ -101,7 +101,7 @@ st.latex(r"""  A^{(1)}= J^{(0)} + [\frac{[\Delta F^{(1)}-A^{(k-1)}-J^{(0)}\Delta
  Sin embargo, la inversión de $A^{(k)}$ en cada iteración significa un esfuerzo computacional considerable  que puede reducirse  empleando la forma de 
  inversión de Sherman Morrison.
  
-Teorema de Sherman Morrison: si A es una matriz de nxn no singular y Xy Y son vectores, entonces $A+XY^{t}$ no es singular, 
+st.title('Teorema de Sherman Morrison:') si A es una matriz de nxn no singular y Xy Y son vectores, entonces $A+XY^{t}$ no es singular, 
  siempre que
 """
 st.latex(r""" 
@@ -145,7 +145,7 @@ st.latex(r"""
  Esta formula  permite calcular la invesa de una matriz  con sumas y multiplicaciones de matrices, con lo que se reduce el esfuerzo computacuonal al orden $n^{2}$.
  Una vez determinada  $ X {(2)} $, el método se repite  para determinar $ X{(2)} $, usando $ (A^{(2)})^{-1} $ que se obtiene a partir de (1.1) con $A^{(1)}$ y con $X^{(2)}$, y $X^{(1)}$
  en lugar de $ X^{(1)} $ y $ X^{(0)} $. En general, una vez determinado $ X^{(i)} $ se calcula $ X^{(i+1)} $ por medio de: 
- """
+"""
 
 st.latex(r"""
     X^{(k+1)}= X^{(k)}-(A^{(k)})^{-1} F(X^{(k)}) 
@@ -154,8 +154,8 @@ st.latex(r"""
 
 """
  Si el método  se aplica  como se describe  en las ecuaciones anteriores el numero d evaluaciones funcionales disminuye  de $n^{2}+n/a/ n$ las
- necesarias para evaluar $F(X^{(i)}$, pero todavía se requieren $O(n{3})$ cálculos para resolver el sistema lineal asociado de $nxn$
- """
+ necesarias para evaluar $F(X^{(i)}$, pero todavía se requieren $O(n{3})$ cálculos para resolver el sistema lineal asociado de $nxn$.
+"""
  
 with tab2: 
       st.title(":blue[Ejercicio:]")
