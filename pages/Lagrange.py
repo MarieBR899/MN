@@ -98,14 +98,15 @@ para satisfacer que $ L_k(X_k) =1 $, el denominador debe ser igual al numerador 
 """
 
 st.latex(r""" 
-L_k(x)=\frac{ (x-x_0)(x-x_1)...(x-x_k-1)(x-x_k+1)...(x-x_n)}{(x_k-x_0)(x_k-x_1)...(x_k-x_k-1)(x_k-x_k+1)...(x_k-x_n)}=  \frac{(x-x_i)}{(x_k-x_i)}
+L_k(x)=\frac{ (x-x_0)(x-x_1)...(x-x_k-1)(x-x_k+1)...(x-x_n)}{(x_k-x_0)(x_k-x_1)...(x_k-x_k-1)(x_k-x_k+1)...(x_k-x_n)}= \[
+\prod_{i=0}{i \neq k}^{n}x_{i}= \frac{(x-x_i)}{(x_k-x_i)}
 
 """)
 """
 
 para cada $k=0,1…, n$; el cual se denomina el cociente de lagrange. A partir del cual se define el polinomio de interpolación de lagrange en el siguiente teorema.
 
-Teorema
+**Teorema**
 sí $x _o, x_1,…,x_n$ son $(n+1)$ son números diferentes y $f(x)$ es una función cuyos valores están dados en estos puntos, entonces existe un único polinomioP(x) de grado a lo más n con la propiedad de que f(x_k)=P(x_k) hd para cada k=0,1…, n.
 Este polinomio está dado por
 """
@@ -113,11 +114,6 @@ st.latex(r"""
 P_n(x)f(x_0)L_0(x) + f(x_1)L_1(x)+...+f(x_n)L_n(x)=\displaystyle\sum_{k=0}^{n}x_{i}=f(x_k)L_k(x)  
 """)
 
-st.latex(r""" 
-\[ 
-\displaystyle\sum_{k=0}^{n}x_{i}=f(x_k)L_k(x)   
-\]
-""")
 
 """
 Dónde $L_k(x)$ está dado por la ecuación del teorema anterior
