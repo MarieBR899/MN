@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
 tab1, tab2, tab3 = st.tabs(["Definiciones","Ejemplos","Aplicaciones"])
 with tab1:
  st.title('ProyectoMN')
@@ -109,12 +114,12 @@ sí $x _o, x_1,…,x_n$ son $(n+1)$ son números diferentes y $f(x)$ es una func
 Este polinomio está dado por
 """
 st.latex(r""" 
-P_n(x)f(x_0)L_0(x) + f(x_1)L_1(x)+...+f(x_n)L_n(x)=
+P_n(x)f(x_0)L_0(x) + f(x_1)L_1(x)+...+f(x_n)L_n(x)=\displaystyle\sum_{k=0}^{n}x_{i}=f(x_k)L_k(x)  
 """)
 
 st.latex(r""" 
 \[ 
-\sum_{k=0}^{n}x_{i}=f(x_k)L_k(x)   
+\displaystyle\sum_{k=0}^{n}x_{i}=f(x_k)L_k(x)   
 \]
 """)
 
