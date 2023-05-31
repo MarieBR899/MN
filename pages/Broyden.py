@@ -53,10 +53,10 @@ de que :
 st.latex(r"""
 A^{(1)}(X^{(1)}-X^{(0)}= F(X^{(1)}-F(X^{(0)})
 """)
-'''
+"""
 
 Esta matriz es la que se usa para  determinar $X^{(2)}$ como:
-'''
+"""
 st.latex(r"""
 X^{(2)} = X^{(1)}-(A^{(1)})^{-1} F(X^{(1)})
    """)
@@ -176,5 +176,47 @@ with tab2:
       """
        Tomando como vector inicial $ X^{(0)}$ 
       """
+      st.latex(r"""
+       \begin{equation}
+       X^{(1)}=
+       \begin{bmatrix}
+       -1\\
+       0\\
+       2 
+       \end{bmatrix}
+       \end {equation}
+       """)
+      """
+      se calcula $ X^{(1)}$ por el método de Newton
+      """
+      st.latex(r"""
+      \begin{equation}
+      X^{(1)}=
+      \begin{bmatrix}
+      -1\\
+      0\\
+      2 
+      \end{bmatrix}
+      -
+      \begin{bmatrix}
+      -3 & -0 & 4\\
+      -2 & -1 & 4\\
+      -2 & 0 & 5
+      \end{bmatrix}^{-1}
+      \begin{bmatrix}
+      1\\
+      1\\
+      1
+     \end{bmatrix}
+     =
+     \begin{bmatrix}
+     -0.88571\\
+      0.1428\\
+      1.8571
+      \end{bmatrix}
+      \end{equation}
+      """) 
+
+
 
  
