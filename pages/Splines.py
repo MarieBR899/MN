@@ -191,7 +191,7 @@ with tab2:
    
    empleando el spline natural, $S_0 y S_n=0$, el sistema queda:
    """
-  st.latex(r"""
+st.latex(r"""
     \begin{equation}
     \begin{pmatrix}
    2(1.5)  & 0.5  \\
