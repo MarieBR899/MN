@@ -13,7 +13,7 @@ with tab1:
   así como para aproximar las soluciones de ecuaciones diferenciales. 
   El tratamiento de las tablas de diferencias divididas supone que la función $f(x)$ es conocida para varios valores de x. Dichos valores no necesariamente están igualmente espaciados u obedecen algún orden (sin embargo, si están ordenados puede ser ventajoso)
 
-  Supóngase que $P_n(x)$ ese polinomio de lagrange de grado a lo más n que coincide con la función $f(x)$ en los números distintos $x _0, x_1,…,x_n. Las diferencias divididas f(x) con respecto  a x _0, x_1,…,x_n$ 
+  Supóngase que $P_n(x)$ ese polinomio de lagrange de grado a lo más $n$ que coincide con la función $f(x)$ en los números distintos $x _0, x_1,…,x_n. Las diferencias divididas f(x) con respecto  a x _0, x_1,…,x_n$ 
   se pueden deducir demostrando que $P_n(x)$ tiene representación
 """
 st.latex(r"""
