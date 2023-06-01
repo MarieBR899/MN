@@ -13,11 +13,6 @@ from plotly.subplots import make_subplots
 tab1, tab2, tab3 = st.tabs(["Definiciones","Ejemplos","Aplicaciones"])
 with tab1:
     st.title(":blue[**Splines cubicos**]")
-
-
-tab1, tab2, tab3 = st.tabs(["Definiciones","Ejemplos","Aplicaciones"])
-with tab1:
-    st.title(":blue[**Splines cubicos**]")
     
     """
     **Spline cúbico**
