@@ -64,7 +64,7 @@ st.latex(r"""
  g'_i(x_i)=3a_i h_i^{2}+2b_ihi + c_i
  """)
 st.latex(r"""
- g''_i(x_i)=6a_ih_i+2b_i_hi
+ g''_i(x_i)=6a_i h_i+2b_i_hi
  """)
 """
 Aprovechando que $g''_i(x_i)$ es lineal  en el intervalo [x_i,x_i+1] se hace:
@@ -134,7 +134,6 @@ Una vez defininidos los valores para los extremos, se escribe la ecuación  ante
  como las incógnitas:
  """
 st.latex(r"""
-A_ = 
 \begin equation{
  \begin{pmatrix}
   h_0    & 2(h_0+h_1) & h_1        & 0         & \cdots   & 0             & 0 \\
