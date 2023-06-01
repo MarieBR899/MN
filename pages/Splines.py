@@ -35,7 +35,7 @@ $(x_i, y_i)$ y $(x_i+1, y_i+1)$, $g_i(x_i)$ en el $i-ésimo$ intervalo,
 st.latex(r"""
  g_i(x_i)=a_i(x-x_i)^{3}+b_i(x-x_i)^{2} + c_i(x-x_i)+ d_i
  """)
- """
+"""
  La funcion se $spline$ cúbico que se desea es de la forma: 
  $g_i(x_i)=g_i(x_i)$ sobre el intervalo [x_i,x_i+1] para $i=0,1,...,n-1$
  y cumple con las condiciones:
@@ -51,7 +51,7 @@ st.latex(r"""
  En el polinomio cúbico $g_i(x)= a_i(x-x_i)^{3}+b_i(x-x_i)^{2} + c_i(x-x_i)+ y_i+y_i$ se puede emplear  $h_i=x_i+1-X_i$ como la amplitud del
  último intervalo y reescribirse como:
  """
-    st.latex(r"""
+st.latex(r"""
  g_i(x_i)=a_ih_i^{3}+b_i_hi^{2} + c_ih_i+ y_i para  i=0,1,...,n-1
  """)
  """
@@ -80,7 +80,7 @@ Despejando los coeficientes $a_i,b_i$:
  $b_i= \dfrac{S_i}{2}$    $a_i= \dfrac{S_i+1-S_i}{6h_i}$
  
  Sustituyendo los valores  de $a_i,b_i y d_i$ en $g_i(x)=y_i+1$ para despejar c_i;
- """
+"""
 st.latex(r"""
  y_i+1= (\dfrac{S_i+1-S_i}{6h_i}) h_i^{3} +  \dfrac{S_i}{2}h_i^{2} +c_ih_i + y_i
  """)
