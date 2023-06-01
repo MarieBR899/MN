@@ -7,7 +7,7 @@ with tab1:
   st.title('ProyectoMN')
   st.title(":blue[**Método de Diferencias Divididas**]")
 
-  """
+ """
   Fórmula de diferencias divididas
   Los métodos para determinar la representación explícita de un polinomio de interpolación , a partir de datos tabulados, se conocen como diferencias y pueden usarse con de deducir técnicas para aproximar las derivadas y las integrales de las funciones, 
   así como para aproximar las soluciones de ecuaciones diferenciales. 
@@ -15,7 +15,7 @@ with tab1:
 
   Supóngase que $P_n(x)$ ese polinomio de lagrange de grado a lo más n que coincide con la función $f(x)$ en los números distintos $x _0, x_1,…,x_n. Las diferencias divididas f(x) con respecto  a x _0, x_1,…,x_n$ 
   se pueden deducir demostrando que $P_n(x)$ tiene representación
- """
+"""
 st.latex(r"""
 P_n(x)= a_0 +a_1(x-x_o)+a_2(x-x_0)(x-x_1)+ ...+a_n(x-x_0)(x-x_1)...(x-x_n-1)
 """)
@@ -41,16 +41,16 @@ st.latex(r"""
 st.latex(r"""
   a_1= \frac {f(x_1)-f(x_0)}{x_1-x_0}
  """)
- """
+"""
   Es aqui en donde se  introduce la notación de la diferencia dividida, la primera diferencia dividida de $f(x)$ con respecto a $x_i$ y $x_i+1$, se denota  por $f[x_i,X_i+1]$ 
   y está definida  como:
- """
+"""
 st.latex(r"""
   f[x_i,X_i+1]=\ frac {f[X_i+1]-f[x_i]}{X_i+1 -x_i}
  """)
- """
+"""
   La diferencia dividida de cero de la función $f(x)$, con respecto a $x_i$, se denota por $f[x_i]$, y es simplemente  la evaluación de $f(x)$ en $x_i$
- """
+"""
 st.latex(r"""
   f[x_i]= f(x_i) 
  """)
