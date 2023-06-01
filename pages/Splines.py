@@ -1,6 +1,18 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import sympy as sy
+from matplotlib import pyplot as plt
+from sympy.plotting.plot import MatplotlibBackend, Plot
+from sympy.plotting import plot3d,plot3d_parametric_line
+import plotly as ply
+import plotly.express as ex
+import plotly.graph_objects as gro
+from plotly.subplots import make_subplots
+
+tab1, tab2, tab3 = st.tabs(["Definiciones","Ejemplos","Aplicaciones"])
+with tab1:
+    st.title(":blue[**Splines cubicos**]")
 
 
 tab1, tab2, tab3 = st.tabs(["Definiciones","Ejemplos","Aplicaciones"])
@@ -236,23 +248,8 @@ st.latex(r"""
    
     y finalmente: $g_0(0.66)=3.465509$, $g_2(1.75)=8.708669$.
    """
-  
 whit tab3:
-    import streamlit as st
-import pandas as pd
-import numpy as np
-import sympy as sy
-from matplotlib import pyplot as plt
-from sympy.plotting.plot import MatplotlibBackend, Plot
-from sympy.plotting import plot3d,plot3d_parametric_line
-import plotly as ply
-import plotly.express as ex
-import plotly.graph_objects as gro
-from plotly.subplots import make_subplots
 
-tab1, tab2, tab3 = st.tabs(["Definiciones","Ejemplos","Aplicaciones"])
-with tab1:
-    st.title(":blue[**Splines cubicos**]")
     
     """
     **Spline cúbico**
