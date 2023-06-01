@@ -89,7 +89,7 @@ P_n(x)= f[x_0]+ f[x_0,x_1](x-x_0)+ f[x_0,x_1,x_2](x-x_0)+a_2(x-x_0)(x-x_1)+ ...
 f[x_0,x_1,...,x_n](x-x_0)(x-x_1)...(x-x_n-1) 
 """)
 st.latex(r"""
-P_n(x)= f[x_0]+ \[sum {n}{k=1}f[x_0,x_1,...,x_n] (x-x_0)(x-x_1)...(x-X_k-1)
+P_n(x)= f[x_0]+ \[\sum_{k=1}^n f[x_0,x_1,...,x_n] (x-x_0)(x-x_1)...(x-X_k-1)
 """)
 """
 A esta última se le conoce como la fórmula de diferencia dividida interpolante de Newton. 
