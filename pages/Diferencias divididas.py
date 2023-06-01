@@ -59,7 +59,7 @@ st.latex(r"""
   Las diferencias divididas se definen  inductivamente , las pimeras de las cuales se muestran  en la siguiente tabla
 """
   
-  
+st.latex(r"""  
 | $x_i$          | $f_i=f[x_i]$ | $f[x_i,x_i+1]$  |$f[x_i,x_i+1,x_i+2]$| $f[x_i,x_i+1,x_i+2, x_i+3]$|
 | --------------| ------------- |-----------------|--------------------| ---------------------------|
 |  $ x_0$ | $f(0)$|  $f[X_0,x_1]$=$\frac{f_1-f_0}{x_1-x_0}$| 
