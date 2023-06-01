@@ -32,7 +32,7 @@ estos valores deberán ser asignados a partir de algunas alternativas que se pre
 Para  determina la forma en que se obtienen estos trazadores cúbicos se describe la ecuación para un polinomio cúbico  entre los puntos 
 $(x_i, y_i)$ y $(x_i+1, y_i+1)$, $g_i(x_i)$ en el $i-ésimo$ intervalo, 
 """
- st.latex(r"""
+st.latex(r"""
  g_i(x_i)=a_i(x-x_i)^{3}+b_i(x-x_i)^{2} + c_i(x-x_i)+ d_i
  """)
  """
