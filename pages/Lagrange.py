@@ -119,6 +119,7 @@ P_n(x)f(x_0)L_0(x) + f(x_1)L_1(x)+...+f(x_n)L_n(x)=\displaystyle\sum_{k=0}^{n}x_
 Dónde $L_k(x)$ está dado por la ecuación del teorema anterior
 La técnica usada para construir $P(x)$ esto de interpolación hola que se empleaba para construir las tablas trigonométricas con logarítmicas. 
 """
+
 with tab2:
 
 """
