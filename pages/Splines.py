@@ -243,7 +243,7 @@ st.latex(r"""
    
     y finalmente: $g_0(0.66)=3.465509$, $g_2(1.75)=8.708669$.
    """
-   with tab3:
+with tab3:
     def get_sympy_subplots(plot:Plot):
     """
     It takes a plot object and returns a matplotlib figure object
