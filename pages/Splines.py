@@ -142,7 +142,14 @@ st.latex(r"""
   \vdots &\vdots      &\cdots       & \ddots    & \cdots  &\cdots         & \cdots \\
   0      & 0          & 0           & \cdots     &h_n     & %2(h_n-2+h_n-1) &h_n-1
    \end{pmatrix}
-   \end{equation}
+   
+   \begin{pmatrix}
+   S_0\\
+   S_1 \\
+   \vdots
+   S_n
+    \end{pmatrix}
+       \end{equation}
  """)
 
 
