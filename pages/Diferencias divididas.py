@@ -9,11 +9,11 @@ with tab1:
 
 """
   Fórmula de diferencias divididas
-  Los métodos para determinar la representación explícita de un polinomio de interpolación , a partir de datos tabulados, se conocen como diferencias y pueden usarse con de deducir técnicas para aproximar las derivadas y las integrales de las funciones, 
+  Los métodos para determinar la representación explícita de un polinomio de interpolación, a partir de datos tabulados, se conocen como diferencias y pueden usarse con de deducir técnicas para aproximar las derivadas y las integrales de las funciones, 
   así como para aproximar las soluciones de ecuaciones diferenciales. 
   El tratamiento de las tablas de diferencias divididas supone que la función $f(x)$ es conocida para varios valores de x. Dichos valores no necesariamente están igualmente espaciados u obedecen algún orden (sin embargo, si están ordenados puede ser ventajoso)
 
-  Supóngase que $P_n(x)$ ese polinomio de lagrange de grado a lo más $n$ que coincide con la función $f(x)$ en los números distintos $x _0, x_1,…,x_n$. Las diferencias divididas $f(x)$ con respecto  a x _0, x_1,…,x_n$ 
+  Supóngase que $P_n(x)$ ese polinomio de lagrange de grado a lo más $n$ que coincide con la función $f(x)$ en los números distintos $x _0, x_1,…,x_n$. Las diferencias divididas $f(x)$ con respecto  $a x _0, x_1,…,x_n$ 
   se pueden deducir demostrando que $P_n(x)$ tiene representación
 """
 st.latex(r"""
@@ -46,7 +46,7 @@ st.latex(r"""
   y está definida  como:
 """
 st.latex(r"""
-  f[x_i,X_i+1]=\ frac {f[X_i+1]-f[x_i]}{X_i+1 -x_i}
+  f[x_i,x_i+1]= \frac{f[x_i+1]-f[x_i]}{x_i+1 -x_i}
  """)
 """
   La diferencia dividida de cero de la función $f(x)$, con respecto a $x_i$, se denota por $f[x_i]$, y es simplemente  la evaluación de $f(x)$ en $x_i$
@@ -73,13 +73,13 @@ st.latex(r"""
 Cuando se han determinado las (k-1) diferencias divididas
 """
 st.latex(r"""
-  f[x_1,X_i+1, X_i+2,...,x_i+k-1] y  f[x_1,X_i+1, X_i+2,...,x_i+k]
+  f[x_1,x_i+1, x_i+2,...,x_i+k-1] y  f[x_1,x_i+1, x_i+2,...,x_i+k]
  """)
 """
 La $k-ésima$ diferencia dividida de $f$ relativa a x_i,X_i+1, X_i+2,...,x_i+k esta dada por:
 """
 st.latex(r"""
-  f[x_1,X_i+1, X_i+2,...,x_i+k]= \frac {f[x_1,X_i+1, X_i+2,...,x_i+k]- f[x_1,X_i+1, X_i+2,...,x_i+k-1]}{x_i+k-x_i}
+  f[x_1,x_i+1, x_i+2,...,x_i+k]= \frac {f[x_1,x_i+1, x_i+2,...,x_i+k]- f[x_1,X_i+1, x_i+2,...,x_i+k-1]}{x_i+k-x_i}
  """)
 """
 Estas diferencias divididas  corresponde a las cosnstantes requerids para cada k=0,1,2,...,n;así el polinomio (2.1) piede reescribirse coomo:
@@ -96,7 +96,7 @@ A esta última se le conoce como la fórmula de diferencia dividida interpolante
 """
 with tab2:
     """
-    **Ejercicio 4** Sea $f(x)=3^x$ con $x∈R$. Sea $p(x)$ el polinomio de grado a lo mas dos que concuerdas con la función en los puntos $x_0=0,x_1=1$ y 
+    **Ejercicio** Sea $f(x)=3^x$ con $x∈R$. Sea $p(x)$ el polinomio de grado a lo mas dos que concuerdas con la función en los puntos $x_0=0,x_1=1$ y 
     $x_2=2$. usando diferencias divididas para construir a p(x).
     """
     """
