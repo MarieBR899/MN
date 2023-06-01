@@ -259,7 +259,7 @@ with tab3:
     return backend.plt
 
 
-def spline_natural(fx,v):
+ def spline_natural(fx,v):
     """
     It takes a list of x values and a list of y values, and returns a list of sympy expressions that represent the cubic
     spline interpolation of the data
