@@ -51,9 +51,9 @@ st.latex(r"""
  En el polinomio cúbico $g_i(x)= a_i(x-x_i)^{3}+b_i(x-x_i)^{2} + c_i(x-x_i)+ y_i+y_i$ se puede emplear  $h_i=x_i+1-X_i$ como la amplitud del
  último intervalo y reescribirse como:
  """
-st.latex(r"""
- g_i(x_i)=a_ih_i^{3}+b_i_hi^{2} + c_ih_i+ y_i para  i=0,1,...,n-1
- """)
+"""
+$g_i(x_i)=a_ih_i^{3}+b_i_hi^{2} + c_ih_i+ y_i$ para  i=0,1,...,n-1
+"""
 """
  El cual  se deriva para relacionar las pendienres y las curvaturas de los splines de la unión:
  """
