@@ -52,7 +52,7 @@ st.latex(r"""
  último intervalo y reescribirse como:
  """
 st.latex(r"""
- g'_ia_ih_i^{3}+b_i_hi^{2}$ + c_ih_i + y_i
+ g'_i a_i h_i^{3}+b_i_hi^{2} + c_i h_i + y_i
  """)
 """
  para  $i=0,1,...,n-1$
