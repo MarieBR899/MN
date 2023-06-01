@@ -248,7 +248,7 @@ st.latex(r"""
    
     y finalmente: $g_0(0.66)=3.465509$, $g_2(1.75)=8.708669$.
    """
- whit tab3:
+whit tab3:
    
     """
     **Spline cúbico**
