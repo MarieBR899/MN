@@ -13,7 +13,7 @@ with tab1:
   así como para aproximar las soluciones de ecuaciones diferenciales. 
   El tratamiento de las tablas de diferencias divididas supone que la función $f(x)$ es conocida para varios valores de x. Dichos valores no necesariamente están igualmente espaciados u obedecen algún orden (sin embargo, si están ordenados puede ser ventajoso)
 
-  Supóngase que $P_n(x)$ ese polinomio de lagrange de grado a lo más $n$ que coincide con la función $f(x)$ en los números distintos $x _0, x_1,…,x_n. Las diferencias divididas f(x) con respecto  a x _0, x_1,…,x_n$ 
+  Supóngase que $P_n(x)$ ese polinomio de lagrange de grado a lo más $n$ que coincide con la función $f(x)$ en los números distintos $x _0, x_1,…,x_n$. Las diferencias divididas $f(x)$ con respecto  a x _0, x_1,…,x_n$ 
   se pueden deducir demostrando que $P_n(x)$ tiene representación
 """
 st.latex(r"""
@@ -63,10 +63,10 @@ st.latex(r"""
 """  
 | $x_i$           | $f_i=f[x_i]$    | $f[x_i,x_i+1]$ |$ f[x_i,x_i+1,x_i+2]$ |$ f[x_i,x_i+1,x_i+2, x_i+3]$|
 | --------------| ------------- |--------------|--------------------| -----------------|
-|   $x_0$ | $f_0$ |  $f[x_0,x_1]$= $ \dfrac {f_1-f_0}{x_1-x_0}$ | $f[x_0,x_1,x_2]$= $\frac {f[x_1-x_2]-f[x_0,x_1]}{x_2-x_0}$ |$ f[X_0,x_1,X_2, X_3] $ $\ frac {f[X_0,x_1,X_2, X_3]-f[X_0,x_1,X_2}{x_3 -x_0}$
-|   $x_1$ | $f_1$ | $ f[x_1,x_2]$ = $ \dfrac {f_2-f_0}{x_2-x_1}$ | $f[x_1,x_2,x_3]$= $\frac{f[x_2,x_3]-f[x_1,x_2]}{x_3-x_1}$ | $f[X_0,x_1,X_2, X_3, X_4]$
-|   $x_2$ | $f_2$ |  $f[x_2,x_3] $= $ \frac {f_3-f_2}{x_3-x_2} $| $f[x_2,x_3,x_4]=$ $\frac {f[x_3,x_4]-f[x_2,x_3]}{x_4-x_2}$ | 
-|   $x_3$ | $f_3$ |  $f[x_3,x_4]$= $\frac {f_4-f_3}{x_4-x_3}$ |
+|   $x_0$ | $f_0$ |  $f[x_0,x_1]$= $ \dfrac {f_1-f_0}{x_1-x_0}$ | $f[x_0,x_1,x_2]$= $\dfrac {f[x_1-x_2]-f[x_0,x_1]}{x_2-x_0}$ |$ f[X_0,x_1,X_2, X_3] $ $\ frac {f[X_0,x_1,X_2, X_3]-f[X_0,x_1,X_2}{x_3 -x_0}$
+|   $x_1$ | $f_1$ | $ f[x_1,x_2]$ = $ \dfrac {f_2-f_0}{x_2-x_1}$ | $f[x_1,x_2,x_3]$= $\dfrac{f[x_2,x_3]-f[x_1,x_2]}{x_3-x_1}$ | $f[X_0,x_1,X_2, X_3, X_4]$
+|   $x_2$ | $f_2$ |  $f[x_2,x_3] $= $ \dfrac {f_3-f_2}{x_3-x_2} $| $f[x_2,x_3,x_4]=$ $\dfrac {f[x_3,x_4]-f[x_2,x_3]}{x_4-x_2}$ | 
+|   $x_3$ | $f_3$ |  $f[x_3,x_4]$= $\dfrac {f_4-f_3}{x_4-x_3}$ |
 |   $x_4$ | $f_4$ | 
 """
 """
