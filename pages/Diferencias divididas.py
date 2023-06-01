@@ -17,7 +17,7 @@ with tab1:
   se pueden deducir demostrando que $P_n(x)$ tiene representación
 """
 st.latex(r"""
-P_n(x)= a_0 +a_1(x-x_o)+a_2(x-x_0)(x-x_1)+ ...+a_n(x-x_0)(x-x_1)...(x-x_n-1)
+P_n(x)= a_0 +a_1(x-x_o)+a_2(x-x_0)(x-x_1)+ ...+a_n(x-x_0)(x-x_1)...(x-x_n-1)   (2.1)
 """)
 
 """
@@ -69,3 +69,59 @@ st.latex(r"""
 |   $x_3$ | $f_3$ |  $f[x_3,x_4]$= $\frac {f_4-f_3}{x_4-x_3}$ |
 |   $x_4$ | $f_4$ | 
 """
+"""
+Cuando se han determinado las (k-1) diferencias divididas
+"""
+st.latex(r"""
+  f[x_1,X_i+1, X_i+2,...,x_i+k-1] y  f[x_1,X_i+1, X_i+2,...,x_i+k]
+ """)
+"""
+La $k-ésima$ diferencia dividida de $f$ relativa a x_i,X_i+1, X_i+2,...,x_i+k esta dada por:
+"""
+st.latex(r"""
+  f[x_1,X_i+1, X_i+2,...,x_i+k]= \frac {f[x_1,X_i+1, X_i+2,...,x_i+k]- f[x_1,X_i+1, X_i+2,...,x_i+k-1]}{x_i+k-x_i}
+ """)
+"""
+Estas diferencias divididas  corresponde a las cosnstantes requerids para cada k=0,1,2,...,n;así el polinomio (2.1) piede reescribirse coomo:
+"""
+st.latex(r"""
+P_n(x)= f[x_0]+ f[x_0,x_1](x-x_0)+ f[x_0,x_1,x_2](x-x_0)+a_2(x-x_0)(x-x_1)+ ...
+f[x_0,x_1,...,x_n](x-x_0)(x-x_1)...(x-x_n-1) 
+""")
+st.latex(r"""
+P_n(x)= f[x_0]+ \[sum {n}{k=1}f[x_0,x_1,...,x_n] (x-x_0)(x-x_1)...(x-X_k-1)
+""")
+"""
+A esta última se le conoce como la fórmula de diferencia dividida interpolante de Newton. 
+"""
+ with tab2:
+    """
+    **Ejercicio 4** Sea $f(x)=3^x$ con $x∈R$. Sea $p(x)$ el polinomio de grado a lo mas dos que concuerdas con la función en los puntos $x_0=0,x_1=1$ y 
+    $x_2=2$. usando diferencias divididas para construir a p(x).
+    """
+    """
+    ssss
+     Para construir el polinomio $p(x)$ de grado a lo más dos que concuerda con la función $f(x)=3x$ en los puntos $x_0=0, x_1=1$ y $x_2=2$ usando el método de diferencias divididas, seguimos los siguientes pasos: 
+
+      1)    Calculamos las diferencias divididas de primer orden 
+     $f[x_0,x1] = \dfrac{f(x_1)-f(x_0)}{x_1 -x_0} =$ $\dfrac{3-1}{1-0} = 2$
+     $f[x_1,x2] = \dfrac{f(x_2)-f(x_1)}{x_2 -x_1} =$ $\dfrac{9-3}{2-1} = 6$
+
+    2) Calculamos las diferencias divididas de segundo orden: \
+    $f[x_0, x_1, x_2]$=$\dfrac{f[x_1,x_2]-f[x_0,x_1]}{x_2-x_0}$ = $\dfrac{6-2}{9-1}$ = $\dfrac{4}{8}$ = $\dfrac{1}{2}$ \
+
+    3)Usando la fórmula de interpolación de Newton para el polinomio $p(x)$, tenemos: \
+    $p(x) = f[x_0] + f[x_0,x_1](x-x_0) + f[x_0,x_1,x_2](x-x_0)(x-x_1)$ \
+
+    Sustituyendo los valores obtenidos de las diferencias divididas: \
+
+    $p(x) = 1 + 2x + (\dfrac{1}{2} x)$ $(\dfrac{1}{2} x - \dfrac{1}{2} )$  \
+     = $\dfrac {x^2}{4}$ - $\dfrac {x}{4} + 1 + 2x $  
+    """
+    
+    
+    
+    
+    
+    
+    
