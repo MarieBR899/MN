@@ -7,7 +7,7 @@ with tab1:
   st.title('ProyectoMN')
   st.title(":blue[**Método de Diferencias Divididas**]")
 
- """
+"""
   Fórmula de diferencias divididas
   Los métodos para determinar la representación explícita de un polinomio de interpolación , a partir de datos tabulados, se conocen como diferencias y pueden usarse con de deducir técnicas para aproximar las derivadas y las integrales de las funciones, 
   así como para aproximar las soluciones de ecuaciones diferenciales. 
