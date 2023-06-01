@@ -248,9 +248,8 @@ st.latex(r"""
    
     y finalmente: $g_0(0.66)=3.465509$, $g_2(1.75)=8.708669$.
    """
-whit tab3:
-
-    
+ whit tab3:
+   
     """
     **Spline cúbico**
 Otra manera de ajustar un polinomio a un conjunto de datos es un $spline$ (trazador) cúbico, la diferencia radica en que este lo hace a través d
