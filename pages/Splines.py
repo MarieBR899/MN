@@ -210,9 +210,9 @@ st.latex(r"""
     \end{pmatrix}
         \end{equation} 
      """)
-   """ el cual  al resolverse  da como resultado:$S_1= 2.292055$ y $S_2= 11.65167$
-   Con estos valores se obtienen los coeficientes  $a_i,b_i, c_i y d_i$ de cada uno de los polinomios cúbicos.
-   Los datos se muestran acontinuación:
+     """ el cual  al resolverse  da como resultado:$S_1= 2.292055$ y $S_2= 11.65167$
+     Con estos valores se obtienen los coeficientes  $a_i,b_i, c_i y d_i$ de cada uno de los polinomios cúbicos.
+     Los datos se muestran acontinuación:
    
    
      | $S_i$    | $a_i$  |$b_i$     | $c_i$   | $d_i$ |
