@@ -120,25 +120,25 @@ Dónde $L_k(x)$ está dado por la ecuación del teorema anterior
 La técnica usada para construir $P(x)$ esto de interpolación hola que se empleaba para construir las tablas trigonométricas con logarítmicas. 
 """
 
-with tab2:
+ with tab2:
 
-"""
-Ejemplo
-las densidades de sodio para 3 temperaturas están dadas por (Nakamura, 1992)
+ """
+ Ejemplo
+ las densidades de sodio para 3 temperaturas están dadas por (Nakamura, 1992)
 
-Para determinar la densidad para t=251°C
-Dado que se tienen 3 puntos, el polinomio que se puede construir es de a lo más  de grado dos, para obtener el valor de los cocientes, se sustituye el valor de t=251
-"""
+ Para determinar la densidad para t=251°C
+ Dado que se tienen 3 puntos, el polinomio que se puede construir es de a lo más  de grado dos, para obtener el valor de los cocientes, se sustituye el valor de t=251
+ """
 
-st.latex(r""" 
-L_0(t)= \frac{ (t-250)(t-371)}{(94-205)(94-371)}= -0.17953  
-""")
-st.latex(r""" 
-L_0(t)= \frac{ (t-94)(t-371)}{(205-94)(205-371)}= 1.022468 
-""")
-st.latex(r""" 
-L_0(t)= \frac{ (t-94)(t-205)}{(371-94)(371-205)}= 0.157061 
-""")
+ st.latex(r""" 
+ L_0(t)= \frac{ (t-250)(t-371)}{(94-205)(94-371)}= -0.17953  
+ """)
+ st.latex(r""" 
+ L_0(t)= \frac{ (t-94)(t-371)}{(205-94)(205-371)}= 1.022468 
+ """)
+ st.latex(r""" 
+ L_0(t)= \frac{ (t-94)(t-205)}{(371-94)(371-205)}= 0.157061 
+ """)
 
 st.latex(r""" 
 P_2(t=251)= -0.17953(929) + 1.022468(902) + 0.157061(860) = 890.336612 
