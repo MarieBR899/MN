@@ -180,8 +180,8 @@ with tab2:
    |1.5   |6.7134|
    |2.25  |13.9130|
   
- Para construir el sistema cuyo resultado son los S_i primero se determinan los elementos necesarios para su construcción, los $h_i$ y 
- las primeras diferencias divididas
+   Para construir el sistema cuyo resultado son los S_i primero se determinan los elementos necesarios para su construcción, los $h_i$ y 
+   las primeras diferencias divididas
  
  
    |  $x_i$|   $f(x_i)$ | $h_i$ | $f[x_i,x_i+1]$ |
@@ -193,7 +193,7 @@ with tab2:
    
    empleando el spline natural, $S_0 y S_n=0$, el sistema queda:
    """
-st.latex(r"""
+   st.latex(r"""
     \begin{equation}
     \begin{pmatrix}
    2(1.5)  & 0.5  \\
@@ -209,28 +209,31 @@ st.latex(r"""
       30.2752
     \end{pmatrix}
         \end{equation} 
- """)
-""" el cual  al resolverse  da como resultado:$S_1= 2.292055$ y $S_2= 11.65167$
+     """)
+    """ el cual  al resolverse  da como resultado:$S_1= 2.292055$ y $S_2= 11.65167$
    Con estos valores se obtienen los coeficientes  $a_i,b_i, c_i y d_i$ de cada uno de los polinomios cúbicos.
    Los datos se muestran acontinuación:
    
    
-   | $S_i$    | $a_i$  |$b_i$     | $c_i$   | $d_i$ |
-    |--------|---------|----------|---------|--------|
-   |0        |0.382009 |       0   |  2.054591   | 2     |
-   |2.292055 |3.119871 | 1.146028  |  3.200618  |4.4366 |
-   |11.65167 |-2.589260| 5.825834  |  6.686549  |6.7134 |
-   |0       |           |             |         |        |
+     | $S_i$    | $a_i$  |$b_i$     | $c_i$   | $d_i$ |
+     |--------|---------|----------|---------|--------|
+    |0        |0.382009 |       0   |  2.054591   | 2     |
+    |2.292055 |3.119871 | 1.146028  |  3.200618  |4.4366 |
+    |11.65167 |-2.589260| 5.825834  |  6.686549  |6.7134 |
+    |0       |           |             |         |        |
    
-   Dado que son cuatro puntos y tres subintervalos, se obtienen 3 curvas cúbicas. Los polinomios quedan como:
-   $g_0(x)= 0.38201(x-0)^{3}+ 2.0546(x-0)+2 $                               para $0\leq x \leq 1$}
+     Dado que son cuatro puntos y tres subintervalos, se obtienen 3 curvas cúbicas. Los polinomios quedan como:
+    $g_0(x)= 0.38201(x-0)^{3}+ 2.0546(x-0)+2 $                               
+    para $0\leq x \leq 1$}
    
-   $g_1(x)= 3.11987(x-1)^{3}+ 1.14603(x-1)^{2}+3.200618(x-1)+4.4366 $       para $1\leq x \leq 1.5$
+    $g_1(x)= 3.11987(x-1)^{3}+ 1.14603(x-1)^{2}+3.200618(x-1)+4.4366 $       
+    para $1\leq x \leq 1.5$
    
-   $g_2(x)= -2.58926(x-1.5)^{3}+ 5.8258(x-1.5)^{2}+6.6865(x-1.5)+6.7134 $   para $1.5\leq x \leq 2.25$
+    $g_2(x)= -2.58926(x-1.5)^{3}+ 5.8258(x-1.5)^{2}+6.6865(x-1.5)+6.7134 $  
+    para $1.5\leq x \leq 2.25$
    
-   y finalmente: $g_0(0.66)=3.465509$, $g_2(1.75)=8.708669$.
-  """
+    y finalmente: $g_0(0.66)=3.465509$, $g_2(1.75)=8.708669$.
+   """
   
 
 
