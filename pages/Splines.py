@@ -223,9 +223,12 @@ st.latex(r"""
    |0       |           |             |         |        |
    
    Dado que son cuatro puntos y tres subintervalos, se obtienen 3 curvas cúbicas. Los polinomios quedan como:
-   $g_0(x)= 0.38201(x-0)^{3}+ 2.0546(x-0)+2 $                               para $0\leq x \leq 1$
+   $g_0(x)= 0.38201(x-0)^{3}+ 2.0546(x-0)+2 $                               para $0\leq x \leq 1$}
+   
    $g_1(x)= 3.11987(x-1)^{3}+ 1.14603(x-1)^{2}+3.200618(x-1)+4.4366 $       para $1\leq x \leq 1.5$
+   
    $g_2(x)= -2.58926(x-1.5)^{3}+ 5.8258(x-1.5)^{2}+6.6865(x-1.5)+6.7134 $   para $1.5\leq x \leq 2.25$
+   
    y finalmente: $g_0(0.66)=3.465509$, $g_2(1.75)=8.708669$.
   """
   
