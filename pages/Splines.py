@@ -171,14 +171,16 @@ with tab2:
     """
    **Ejemplo** Emplear los datos de la siguiente tabla: para hacer un ajuste por spline cúbico y determinar  una estimación 
    para $f(0.66) y f(1.75)$
-   
+   """
+    
    |   $x$     |   $f(x)$ |
    ------------------------
    |0.0     | 2  |
-   |1.0     |4.4366|
+   |1.0      |4.4366|
    |1.5      |6.7134|
    |2.25     |13.9130|
-   
+  
+ """   
  Para construir el sistema cuyo resultado son los S_i primero se determinan los elementos necesarios para su construcción, los $h_i$ y 
  las primeras diferencias divididas
  
