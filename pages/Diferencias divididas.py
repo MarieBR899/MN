@@ -94,7 +94,7 @@ P_n(x)= f[x_0]+ \[sum {n}{k=1}f[x_0,x_1,...,x_n] (x-x_0)(x-x_1)...(x-X_k-1)
 """
 A esta última se le conoce como la fórmula de diferencia dividida interpolante de Newton. 
 """
- with tab2:
+with tab2:
     """
     **Ejercicio 4** Sea $f(x)=3^x$ con $x∈R$. Sea $p(x)$ el polinomio de grado a lo mas dos que concuerdas con la función en los puntos $x_0=0,x_1=1$ y 
     $x_2=2$. usando diferencias divididas para construir a p(x).
