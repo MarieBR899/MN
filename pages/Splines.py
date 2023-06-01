@@ -171,7 +171,8 @@ with tab2:
     """
    **Ejemplo** Emplear los datos de la siguiente tabla: para hacer un ajuste por spline cúbico y determinar  una estimación 
    para $f(0.66) y f(1.75)$
-       
+    
+    
    |   $x$ |$f(x)$|
    ----------------
    |0.0   | 2  |
@@ -181,6 +182,7 @@ with tab2:
   
  Para construir el sistema cuyo resultado son los S_i primero se determinan los elementos necesarios para su construcción, los $h_i$ y 
  las primeras diferencias divididas
+ 
  
   |   $x_i$|   $f(x_i)$ | $h_i$ | $f[x_i,x_i+1]$ |
    -----------------------------------------------------------
@@ -212,12 +214,13 @@ st.latex(r"""
    Con estos valores se obtienen los coeficientes  $a_i,b_i, c_i y d_i$ de cada uno de los polinomios cúbicos.
    Los datos se muestran acontinuación:
    
+   
    | $S_i$| $a_i$ |$b_i$| $c_i$ | $d_i$ 
    ------------------------------------------------------------------
    |0        |0.382009 |       0   |  2.054591    | 2      |
    |2.292055 |3.119871 | 1.146028  |  3.200618    |4.4366 |
    |11.65167 |-2.589260| 5.825834  |  6.686549    |6.7134 |
-   |0       |           |             |               |    |
+   |0       |           |             |          |        |
    
    Dado que son cuatro puntos y tres subintervalos, se obtienen 3 curvas cúbicas. Los polinomios quedan como:
    $g_0(x)= 0.38201(x-0)^{3}+ 2.0546(x-0)+2 $                               para $0\leq x \leq 1$
