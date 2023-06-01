@@ -57,7 +57,7 @@ st.latex(r"""
 """
  El cual  se deriva para relacionar las pendienres y las curvaturas de los splines de la unión:
  """
- st.latex(r"""
+st.latex(r"""
  g'_i(x_i)=3a_ih_i^{2}+2b_i_hi + c_i
  """)
 st.latex(r"""
