@@ -140,14 +140,14 @@ with tab2:
  L_0(t)= \frac{ (t-94)(t-205)}{(371-94)(371-205)}= 0.157061 
  """)
 
-st.latex(r""" 
-P_2(t=251)= -0.17953(929) + 1.022468(902) + 0.157061(860) = 890.336612 
-""")
+ st.latex(r""" 
+ P_2(t=251)= -0.17953(929) + 1.022468(902) + 0.157061(860) = 890.336612 
+ """)
 
-"""
-Entonces, la densidad del sodio a una temperatura t=251°C es de d= 890.5566117 Kg/$m^{3}$
+ """
+ Entonces, la densidad del sodio a una temperatura t=251°C es de d= 890.5566117 Kg/$m^{3}$
 
-aquí  cabe aclarar que, aunque con el método de lagrange se puede obtener una expresión ese que potencias que aproxime a la función que
-describe la table datos, esto no es una práctica común, porque generalmente se aplica mediante un programa computadora y porque existen 
-métodos más eficientes para este fin.
-"""
+ aquí  cabe aclarar que, aunque con el método de lagrange se puede obtener una expresión ese que potencias que aproxime a la función que
+ describe la table datos, esto no es una práctica común, porque generalmente se aplica mediante un programa computadora y porque existen 
+ métodos más eficientes para este fin.
+ """
