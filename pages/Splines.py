@@ -52,7 +52,7 @@ st.latex(r"""
  último intervalo y reescribirse como:
  """
 """
-$g_i(x_i)=a_ih_i^{3}+b_i_hi^{2} + c_ih_i+ y_i$ para  i=0,1,...,n-1
+$g_i(x_i)= $a_ih_i^{3}$+$b_i_hi^{2}$ + $c_ih_i + y_i$ para  $i=0,1,...,n-1$
 """
 """
  El cual  se deriva para relacionar las pendienres y las curvaturas de los splines de la unión:
