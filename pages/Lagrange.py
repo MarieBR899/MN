@@ -120,7 +120,7 @@ Dónde $L_k(x)$ está dado por la ecuación del teorema anterior
 La técnica usada para construir $P(x)$ esto de interpolación hola que se empleaba para construir las tablas trigonométricas con logarítmicas. 
 """
 
- with tab2:
+with tab2:
 
  """
  Ejemplo
