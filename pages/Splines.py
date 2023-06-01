@@ -138,7 +138,7 @@ st.latex(r"""
  \begin{pmatrix}
   h_0    & 2(h_0+h_1) & h_1        & 0         & \cdots   & 0             & 0 \\
   0      & h_1        & 2(h_1+h_2) & h_2       &\cdots    &               &\cdots\\
-  0      & 0          & h_2        &2(h_2+h_3) & \cdots   &\cdots         $\cdots  \\
+  0      & 0          & h_2        &2(h_2+h_3) & \cdots   &\cdots         &\cdots  \\
   \vdots &\vdots      &\cdots       & \ddots    & \cdots  &\cdots         & \cdots \\
   0      & 0          & 0           & \cdots     &h_n     & %2(h_n-2+h_n-1) &h_n-1
    \end{pmatrix}
