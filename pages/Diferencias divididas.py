@@ -25,7 +25,7 @@ P_n(x)= a_0 +a_1(x-x_o)+a_2(x-x_0)(x-x_1)+ ...+a_n(x-x_0)(x-x_1)...(x-x_n-1)
   Si $P_n(k)$ cumple con la condición de pasar por los puntos empleados en su construcción, entonces evaluando en la ecuación 
   anterior $x=x_0$ queda: 
 """
-  st.latex(r"""
+ st.latex(r"""
  P_n(x_0)= a_0 =f(x_0) 
  """)
   
@@ -45,13 +45,13 @@ P_n(x)= a_0 +a_1(x-x_o)+a_2(x-x_0)(x-x_1)+ ...+a_n(x-x_0)(x-x_1)...(x-x_n-1)
   Es aqui en donde se  introduce la notación de la diferencia dividida, la primera diferencia dividida de $f(x)$ con respecto a $x_i$ y $x_i+1$, se denota  por $f[x_i,X_i+1]$ 
   y está definida  como:
  """
-  st.latex(r"""
+ st.latex(r"""
   f[x_i,X_i+1]=\ frac {f[X_i+1]-f[x_i]}{X_i+1 -x_i}
  """)
  """
   La diferencia dividida de cero de la función $f(x)$, con respecto a $x_i$, se denota por $f[x_i]$, y es simplemente  la evaluación de $f(x)$ en $x_i$
  """
-  st.latex(r"""
+ st.latex(r"""
   f[x_i]= f(x_i) 
  """)
   
